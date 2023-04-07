@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    // private dictionary evidences = {};
+    private Dictionary<GameObject, bool> evidence = new Dictionary<GameObject, bool>();
     public int pieces_of_evidence;
 
     public GameObject dialogBox;
@@ -18,13 +18,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        print(evidence);
+        foreach (var evi in evidence.Keys) { // Learned from https://forum.unity.com/threads/c-dictionary-loop.337804/
+            evi.SetActive(true);
+        }
     }
 
     public void DialogShow(string text) {
@@ -45,6 +48,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddEvidence(GameObject evi) {
+        evidence.Add(evi, true);
+    }
+
     // void Awake(){
     //     if (Instance == null){
     //         Instance = this;
@@ -55,5 +62,21 @@ public class GameManager : MonoBehaviour
     //     }
     // }
 
+    IEnumerator LoadYourAsyncScene(string scene) {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+
+        while(!asyncLoad.isDone) {
+            yield return null;
+        }
+        DialogHide();
+        // if(scene != "Menu") {
+        //     mainScreen.SetActive(false);
+        // }
+    }
+
+    public void ChangeScene(string scene){
+        print(scene);
+        StartCoroutine(LoadYourAsyncScene(scene));
+    }
 
 }
