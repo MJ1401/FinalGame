@@ -8,11 +8,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    private Dictionary<GameObject, bool> evidence = new Dictionary<GameObject, bool>();
+    public static GameManager Instance {get; private set;}
+
+    private static Dictionary<GameObject, bool> evidence = new Dictionary<GameObject, bool>();
     public int pieces_of_evidence;
 
-    public GameObject dialogBox;
-    public TextMeshProUGUI dialogText;
+    // public GameObject dialogBox;
+    // public TextMeshProUGUI dialogText;
 
 
     // Start is called before the first frame update
@@ -30,37 +32,37 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void DialogShow(string text) {
-        dialogBox.SetActive(true);
-        StopAllCoroutines();
-        StartCoroutine(TypeText(text));
-    }
+    // public void DialogShow(string text) {
+    //     dialogBox.SetActive(true);
+    //     StopAllCoroutines();
+    //     StartCoroutine(TypeText(text));
+    // }
 
-    public void DialogHide(){
-        dialogBox.SetActive(false);
-    }
+    // public void DialogHide(){
+    //     dialogBox.SetActive(false);
+    // }
 
-    IEnumerator TypeText(string text) {
-        dialogText.text = "";
-        foreach(char c in text.ToCharArray()) {
-            dialogText.text += c;
-            yield return new WaitForSeconds(0.02f);
-        }
-    }
+    // IEnumerator TypeText(string text) {
+    //     dialogText.text = "";
+    //     foreach(char c in text.ToCharArray()) {
+    //         dialogText.text += c;
+    //         yield return new WaitForSeconds(0.02f);
+    //     }
+    // }
 
     public void AddEvidence(GameObject evi) {
         evidence.Add(evi, true);
+        // DontDestroyOnLoad(evi);
     }
 
-    // void Awake(){
-    //     if (Instance == null){
-    //         Instance = this;
-    //         DontDestroyOnLoad(gameObject); 
-    //         DontDestroyOnLoad(canvas);
-    //     } else {
-    //         Destroy(gameObject);
-    //     }
-    // }
+    void Awake(){
+        if (Instance == null){
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
+    }
 
     IEnumerator LoadYourAsyncScene(string scene) {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
@@ -68,7 +70,7 @@ public class GameManager : MonoBehaviour
         while(!asyncLoad.isDone) {
             yield return null;
         }
-        DialogHide();
+        // DialogHide();
         // if(scene != "Menu") {
         //     mainScreen.SetActive(false);
         // }
