@@ -27,10 +27,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(evidence);
-        foreach (var evi in evidence.Keys) { // Learned from https://forum.unity.com/threads/c-dictionary-loop.337804/
-            
-        }
+
     }
 
 
@@ -54,7 +51,6 @@ public class GameManager : MonoBehaviour
 
     public void AddEvidence(string evi) {
         evidence.Add(evi, true);
-        // DontDestroyOnLoad(evi);
     }
 
     void Awake(){
