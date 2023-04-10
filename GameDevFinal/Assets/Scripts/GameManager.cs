@@ -10,8 +10,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance {get; private set;}
 
-    private static Dictionary<GameObject, bool> evidence = new Dictionary<GameObject, bool>();
+    public static Dictionary<string, bool> evidence = new Dictionary<string, bool>();
     private int pieces_of_evidence = 8;
+    
 
     // public GameObject dialogBox;
     // public TextMeshProUGUI dialogText;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -28,9 +29,10 @@ public class GameManager : MonoBehaviour
     {
         print(evidence);
         foreach (var evi in evidence.Keys) { // Learned from https://forum.unity.com/threads/c-dictionary-loop.337804/
-            evi.SetActive(true);
+            
         }
     }
+
 
     // public void DialogShow(string text) {
     //     dialogBox.SetActive(true);
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
     //     }
     // }
 
-    public void AddEvidence(GameObject evi) {
+    public void AddEvidence(string evi) {
         evidence.Add(evi, true);
         // DontDestroyOnLoad(evi);
     }

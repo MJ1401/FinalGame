@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 263159602}
   m_Layer: 5
   m_Name: Evidence 4
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 918249820}
   m_Layer: 5
   m_Name: Evidence 7
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 996671660}
   m_Layer: 5
   m_Name: Evidence 8
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -941,7 +941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228434723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2057996032}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AddEvidence
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Evidence 8
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228434723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,7 +1005,7 @@ GameObject:
   - component: {fileID: 1424623493}
   m_Layer: 5
   m_Name: Evidence 2
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1229,7 +1241,7 @@ GameObject:
   - component: {fileID: 1651736112}
   m_Layer: 5
   m_Name: Evidence 3
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,7 +1317,7 @@ GameObject:
   - component: {fileID: 1656394427}
   m_Layer: 5
   m_Name: Evidence 6
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1455,25 +1467,25 @@ MonoBehaviour:
       - m_Target: {fileID: 2057996032}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: AddEvidence
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 1779429991}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Evidence 1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2057996032}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: AddEvidence
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 263159600}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Evidence 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1705932663
@@ -1528,7 +1540,7 @@ GameObject:
   - component: {fileID: 1779429995}
   m_Layer: 5
   m_Name: Evidence 1
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1603,8 +1615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff400550a3a61cc4591be038ce2c7350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evidenceManager: {fileID: 0}
-  evidence: {fileID: 1779429991}
 --- !u!1 &1849777148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1839,7 @@ GameObject:
   - component: {fileID: 1949916239}
   m_Layer: 5
   m_Name: Evidence 5
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2038,6 +2048,7 @@ GameObject:
   - component: {fileID: 2057996030}
   - component: {fileID: 2057996029}
   - component: {fileID: 2057996032}
+  - component: {fileID: 2057996033}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2107,7 +2118,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68e64f3c2605b945880b03adb3b159d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces_of_evidence: 8
+--- !u!114 &2057996033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057996028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2836ac1ecaf2cf44a55c286b0b786b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence:
+  - {fileID: 1779429991}
+  - {fileID: 1424623491}
+  - {fileID: 1651736110}
+  - {fileID: 263159600}
+  - {fileID: 1949916237}
+  - {fileID: 1656394425}
+  - {fileID: 918249818}
+  - {fileID: 996671658}
 --- !u!1 &2085949444
 GameObject:
   m_ObjectHideFlags: 0
