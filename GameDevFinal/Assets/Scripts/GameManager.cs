@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     private static Dictionary<GameObject, bool> evidence = new Dictionary<GameObject, bool>();
-    public int pieces_of_evidence;
+    private int pieces_of_evidence = 8;
 
     // public GameObject dialogBox;
     // public TextMeshProUGUI dialogText;
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         } else {
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 

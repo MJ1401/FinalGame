@@ -1056,58 +1056,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424623491}
   m_CullTransparentMesh: 1
---- !u!1 &1427574717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1427574719}
-  - component: {fileID: 1427574720}
-  m_Layer: 0
-  m_Name: EvidenceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1427574719
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427574717}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 567.9805, y: 170.16577, z: 1.3111978}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1427574720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427574717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3304eab16ad384e89c861a07b0804c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  evidence1: 0
-  evidence2: 0
-  evidence3: 0
-  evidence4: 0
-  evidence5: 0
-  evidence6: 0
-  evidence7: 0
-  evidence8: 0
 --- !u!1 &1540227936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff400550a3a61cc4591be038ce2c7350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evidenceManager: {fileID: 1427574720}
+  evidenceManager: {fileID: 0}
   evidence: {fileID: 1779429991}
 --- !u!1 &1849777148
 GameObject:
@@ -2160,8 +2108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pieces_of_evidence: 8
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
 --- !u!1 &2085949444
 GameObject:
   m_ObjectHideFlags: 0
