@@ -50,7 +50,10 @@ public class GameManager : MonoBehaviour
     // }
 
     public void AddEvidence(string evi) {
-        evidence.Add(evi, true);
+        if (!evidence.ContainsKey(evi)) {
+            evidence.Add(evi, true);
+        }
+        print("Already Added Evidence");
     }
 
     void Awake(){
