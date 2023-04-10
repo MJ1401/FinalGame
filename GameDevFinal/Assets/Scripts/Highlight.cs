@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Highlight : MonoBehaviour
 {
 
-    private Image myImage;
+    [SerializeField] private Image myImage;
+    [SerializeField] private Color myColor;
     private Color startcolor;
 
     private void Start() {
@@ -14,11 +15,13 @@ public class Highlight : MonoBehaviour
     }
     
     public void OnMouseEnter() {
-        startcolor = GetComponent<Image>().color;
-        GetComponent<Image>().color = Color.red;
+        print("IM mouse over");
+        startcolor = myImage.color;
+        myImage.color = myColor;
     }
 
     public void OnMouseExit() {
-        GetComponent<Image>().color = startcolor;
+        print("I'm mouse exit");
+        myImage.color = startcolor;
     }
 }
