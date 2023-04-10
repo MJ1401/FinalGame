@@ -49,11 +49,12 @@ public class GameManager : MonoBehaviour
     //     }
     // }
 
-    public void AddEvidence(string evi) {
+    public static void AddEvidence(string evi) {
         if (!evidence.ContainsKey(evi)) {
             evidence.Add(evi, true);
+        } else {
+            print("Already Added Evidence");
         }
-        print("Already Added Evidence");
     }
 
     void Awake(){
