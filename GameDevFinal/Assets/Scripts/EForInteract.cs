@@ -53,12 +53,12 @@
 //         }
 //     }
 
-//     private void collect() {
-//         // set text to something like "can I help you? and can repeat"
-//         // add evidence to collection
-//         GameManager.AddEvidence(evidence_name);
-//         print("Evidence collected");
-//     }
+    // private void collect() {
+    //     // set text to something like "can I help you? and can repeat"
+    //     // add evidence to collection
+    //     GameManager.AddEvidence(evidence_name);
+    //     print("Evidence collected");
+    // }
 
 
 // }
@@ -75,6 +75,8 @@ public class EForInteract : MonoBehaviour {
 
     private bool dialogShown;
 
+    public string evidence_name;
+
     public void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.gameObject.CompareTag("Player")) {
             canShowDialog = true;
@@ -89,17 +91,6 @@ public class EForInteract : MonoBehaviour {
         }
     }
 
-    // void Update() {
-    //     if (canShowDialog && Input.GetKeyDown(KeyCode.E))
-    //     {
-    //         GameManager.Instance.DialogShow(text);
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.E))
-    //     {
-    //         GameManager.Instance.DialogHide();
-    //     }
-    // }
-
     void Update() {
         if (canShowDialog && Input.GetKeyDown(KeyCode.E))
         {
@@ -112,7 +103,15 @@ public class EForInteract : MonoBehaviour {
             {
                 GameManager.Instance.DialogHide();
                 dialogShown = false;
+                collect();
             }
         }
     }
+
+    private void collect() {
+        // set text to something like "can I help you? and can repeat"
+        GameManager.AddEvidence(evidence_name);
+        print("Evidence collected");
+    }
+
 }
