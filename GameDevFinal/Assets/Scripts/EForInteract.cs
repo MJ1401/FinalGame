@@ -69,13 +69,15 @@ using UnityEngine;
 
 public class EForInteract : MonoBehaviour {
 
-    public string text;
+    public string[] text;
 
     private bool canShowDialog;
 
     private bool dialogShown;
 
     public string evidence_name;
+
+    private int currentTextIndex = 0;
 
     public void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.gameObject.CompareTag("Player")) {
@@ -88,6 +90,7 @@ public class EForInteract : MonoBehaviour {
         {
             GameManager.Instance.DialogHide();
             canShowDialog = false;
+            currentTextIndex = 0;
         }
     }
 
@@ -96,14 +99,31 @@ public class EForInteract : MonoBehaviour {
         {
             if (!dialogShown)
             {
-                GameManager.Instance.DialogShow(text);
+                GameManager.Instance.DialogShow(text[currentTextIndex]);
                 dialogShown = true;
             }
+            // else
+            // {
+            //     GameManager.Instance.DialogHide();
+            //     dialogShown = false;
+            //     collect();
+            // }
             else
             {
                 GameManager.Instance.DialogHide();
                 dialogShown = false;
-                collect();
+
+                if (currentTextIndex < text.Length - 1)
+                {
+                    currentTextIndex++;
+                    GameManager.Instance.DialogShow(text[currentTextIndex]);
+                    dialogShown = true;
+                }
+                else
+                {
+                    collect();
+                    currentTextIndex = 0;
+                }
             }
         }
     }
