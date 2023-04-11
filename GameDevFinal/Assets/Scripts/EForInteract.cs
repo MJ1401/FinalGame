@@ -73,6 +73,8 @@ public class EForInteract : MonoBehaviour {
 
     private bool canShowDialog;
 
+    private bool dialogShown;
+
     public void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.gameObject.CompareTag("Player")) {
             canShowDialog = true;
@@ -87,14 +89,30 @@ public class EForInteract : MonoBehaviour {
         }
     }
 
+    // void Update() {
+    //     if (canShowDialog && Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         GameManager.Instance.DialogShow(text);
+    //     }
+    //     else if (Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         GameManager.Instance.DialogHide();
+    //     }
+    // }
+
     void Update() {
         if (canShowDialog && Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.Instance.DialogShow(text);
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            GameManager.Instance.DialogHide();
+            if (!dialogShown)
+            {
+                GameManager.Instance.DialogShow(text);
+                dialogShown = true;
+            }
+            else
+            {
+                GameManager.Instance.DialogHide();
+                dialogShown = false;
+            }
         }
     }
 }
