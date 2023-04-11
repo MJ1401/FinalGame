@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     private int pieces_of_evidence = 8;
     
 
-    // public GameObject dialogBox;
-    // public TextMeshProUGUI dialogText;
+    public GameObject dialogBox;
+    public TextMeshProUGUI dialogText;
 
 
     // Start is called before the first frame update
@@ -31,23 +31,23 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // public void DialogShow(string text) {
-    //     dialogBox.SetActive(true);
-    //     StopAllCoroutines();
-    //     StartCoroutine(TypeText(text));
-    // }
+    public void DialogShow(string text) {
+        dialogBox.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(TypeText(text));
+    }
 
-    // public void DialogHide(){
-    //     dialogBox.SetActive(false);
-    // }
+    public void DialogHide(){
+        dialogBox.SetActive(false);
+    }
 
-    // IEnumerator TypeText(string text) {
-    //     dialogText.text = "";
-    //     foreach(char c in text.ToCharArray()) {
-    //         dialogText.text += c;
-    //         yield return new WaitForSeconds(0.02f);
-    //     }
-    // }
+    IEnumerator TypeText(string text) {
+        dialogText.text = "";
+        foreach(char c in text.ToCharArray()) {
+            dialogText.text += c;
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
 
     public static void AddEvidence(string evi) {
         if (!evidence.ContainsKey(evi)) {
