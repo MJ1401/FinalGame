@@ -6,13 +6,13 @@ using UnityEngine.UI;
 // https://answers.unity.com/questions/1095047/detect-mouse-events-for-ui-canvas.html
 public class Highlight : MonoBehaviour
     , IPointerClickHandler // 2
-    , IDragHandler
     , IPointerEnterHandler
     , IPointerExitHandler
 // ... And many more available!
 {
     Image sprite;
     Color target = Color.red;
+    private bool wasClicked = false;
 
     void Awake()
     {
@@ -28,23 +28,25 @@ public class Highlight : MonoBehaviour
     public void OnPointerClick(PointerEventData eventData) // 3
     {
         print("I was clicked");
-        target = Color.blue;
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        print("I'm being dragged!");
-        target = Color.magenta;
+        if (wasClicked) {
+            target = Color.red;
+            wasClicked = false;
+        } else {
+            target = Color.green;
+            wasClicked = true;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        target = Color.green;
+        // target = Color.blue;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        target = Color.red;
+        if (!wasClicked) {
+            target = Color.red;
+        }
     }
 
     public void OnMouseUp() {
