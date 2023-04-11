@@ -4,7 +4,7 @@ using UnityEngine.UI;
  
 
 // https://answers.unity.com/questions/1095047/detect-mouse-events-for-ui-canvas.html
-public class Highlight : MonoBehaviour
+public class Highlighter : MonoBehaviour
     , IPointerClickHandler // 2
     , IDragHandler
     , IPointerEnterHandler
