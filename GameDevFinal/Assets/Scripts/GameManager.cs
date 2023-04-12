@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     public static Dictionary<string, bool> evidence = new Dictionary<string, bool>();
-    private int pieces_of_evidence = 8;
     
 
     public GameObject dialogBox;
