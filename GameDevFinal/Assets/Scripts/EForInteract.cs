@@ -132,6 +132,7 @@ public class EForInteract : MonoBehaviour {
         // set text to something like "can I help you? and can repeat"
         GameManager.AddEvidence(evidence_name);
         print("Evidence collected");
+        Journal.addToJournal(evidence_name);
     }
 
 }
