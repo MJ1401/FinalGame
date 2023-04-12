@@ -3,9 +3,7 @@ using UnityEngine;
  using UnityEngine.UI;
 
  public class HoverHighlight : MonoBehaviour
-     , IPointerClickHandler // 2
-     , IDragHandler
-     , IPointerEnterHandler
+    , IPointerEnterHandler
      , IPointerExitHandler
  // ... And many more available!
  {
