@@ -10,7 +10,9 @@ public class Journal : MonoBehaviour
     public GameObject userInterface;
     public GameObject openedNotebook;
     public GameObject informationOne;
+    public GameObject informationTwo;
     private static bool infoOne;
+    private static bool infoTwo;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,9 @@ public class Journal : MonoBehaviour
         openedNotebook.SetActive(true);
         if(infoOne == true){
             informationOne.SetActive(true);
+        }
+        if(infoTwo == true){
+            informationTwo.SetActive(true);
         }
     }
 
@@ -39,6 +44,10 @@ public class Journal : MonoBehaviour
         if(evid == "informationOne"){
             print("Passed the check");
             infoOne = true;
+        }
+        if(evid == "informationTwo"){
+            print("Passed the check");
+            infoTwo = true;
         }
     }
 
