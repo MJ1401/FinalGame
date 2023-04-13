@@ -17,13 +17,14 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+    public TextMeshProUGUI totalText;
     private int total;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
         foreach (var evi in used_evidence.Values) {
             total += evi;
         }
-        print(total);
+        totalText.text = "Score: " + total.ToString();
     }
 
     public void DialogShow(string text) {
@@ -76,8 +77,18 @@ public class GameManager : MonoBehaviour
         } else {
             print("That evidence is not being used");
         }
-        
     }
+
+    // public static void RemoveAllUsedEvidence() {
+    //     List<string> toRemove = new List<string>();
+    //     foreach (var evi in used_evidence.Keys) {
+    //         toRemove.add(evi);
+    //     }
+    //     String[] str = toRemove.ToArray();
+    //     foreach(var evi in str) {
+    //         used_evidence.Remove(evi);
+    //     }
+    // }
 
     void Awake(){
         if (Instance == null){
@@ -104,6 +115,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string scene){
         print(scene);
+        // RemoveAllUsedEvidence();
         StartCoroutine(LoadYourAsyncScene(scene));
     }
 
