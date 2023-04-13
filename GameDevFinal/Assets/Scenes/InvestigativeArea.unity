@@ -1471,6 +1471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 2
+  score: 2
 --- !u!61 &458394894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1991,6 +1993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 7
+  score: 7
 --- !u!61 &550823908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2108,6 +2112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 4
+  score: 4
 --- !u!61 &590128841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2976,6 +2982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 3
+  score: 3
 --- !u!61 &821356633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5477,6 +5485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 5
+  score: 5
 --- !u!61 &1345390542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6077,6 +6087,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520b6fcde40c6cf4c864431d0ff56824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  target:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
 --- !u!114 &1531120492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6420,6 +6436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 6
+  score: 6
 --- !u!61 &1553206451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7652,6 +7670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 1
+  score: 1
 --- !u!1 &1841991198
 GameObject:
   m_ObjectHideFlags: 0
@@ -7782,6 +7802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: Evidence 8
+  score: 8
 --- !u!61 &1844798648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9204,6 +9226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002c6c6798e4444b2e657b0c97d56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidence: 
+  score: 0
 --- !u!1 &2080109111
 GameObject:
   m_ObjectHideFlags: 0

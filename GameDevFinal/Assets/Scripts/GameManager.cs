@@ -11,10 +11,13 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance {get; private set;}
 
     public static Dictionary<string, bool> evidence = new Dictionary<string, bool>();
-    
+
+    public static Dictionary<string, int> used_evidence = new Dictionary<string, int>();
 
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
+
+    private int total;
 
 
     // Start is called before the first frame update
@@ -26,7 +29,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        total = 0;
+        foreach (var evi in used_evidence.Values) {
+            total += evi;
+        }
+        print(total);
     }
 
     public void DialogShow(string text) {
@@ -53,6 +60,23 @@ public class GameManager : MonoBehaviour
         } else {
             print("Already Added Evidence");
         }
+    }
+
+    public static void AddUsedEvidence(string evi, int score) {
+        if (!used_evidence.ContainsKey(evi)) {
+            used_evidence.Add(evi, score);
+        } else {
+            print("Already Added Evidence");
+        }
+    }
+
+    public static void DeleteUsedEvidence(string evi) {
+        if (used_evidence.ContainsKey(evi)) {
+            used_evidence.Remove(evi);
+        } else {
+            print("That evidence is not being used");
+        }
+        
     }
 
     void Awake(){
