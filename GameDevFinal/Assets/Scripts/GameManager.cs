@@ -53,6 +53,13 @@ public class GameManager : MonoBehaviour
         failureScreen.SetActive(true);
     }
 
+    public void ResetScene() {
+        RemoveAllEvidence();
+        RemoveAllUsedEvidence();
+        days = 1;
+        month = 9;
+    }
+
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
         StopAllCoroutines();
