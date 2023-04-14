@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GN_Test.unity
     guid: 4c4ad37c9dbf20843a3ee08c30284543
+  - enabled: 1
+    path: Assets/Scenes/PostQuake.unity
+    guid: aa405e3fea1885945beec24710736099
   m_configObjects: {}

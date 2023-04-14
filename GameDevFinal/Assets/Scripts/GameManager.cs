@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI totalText;
     private int total;
 
+    public TextMeshProUGUI dateText;
+    private static int days = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +38,7 @@ public class GameManager : MonoBehaviour
             total += evi;
         }
         totalText.text = "Score: " + total.ToString();
+        dateText.text = "Date: 9/" + days.ToString() + "/1811";
     }
 
     public void DialogShow(string text) {
@@ -63,6 +67,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public static void RemoveAllEvidence() {
+        evidence.Clear();
+    }
+
     public static void AddUsedEvidence(string evi, int score) {
         if (!used_evidence.ContainsKey(evi)) {
             used_evidence.Add(evi, score);
@@ -81,6 +89,10 @@ public class GameManager : MonoBehaviour
 
     public static void RemoveAllUsedEvidence() {
         used_evidence.Clear();
+    }
+
+    public void AddDays(int n) {
+        days = n + days;
     }
 
     void Awake(){
