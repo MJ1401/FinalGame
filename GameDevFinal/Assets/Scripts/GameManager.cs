@@ -79,16 +79,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // public static void RemoveAllUsedEvidence() {
-    //     List<string> toRemove = new List<string>();
-    //     foreach (var evi in used_evidence.Keys) {
-    //         toRemove.add(evi);
-    //     }
-    //     String[] str = toRemove.ToArray();
-    //     foreach(var evi in str) {
-    //         used_evidence.Remove(evi);
-    //     }
-    // }
+    public static void RemoveAllUsedEvidence() {
+        used_evidence.Clear();
+    }
 
     void Awake(){
         if (Instance == null){
@@ -115,7 +108,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string scene){
         print(scene);
-        // RemoveAllUsedEvidence();
+        RemoveAllUsedEvidence();
         StartCoroutine(LoadYourAsyncScene(scene));
     }
 
