@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PostQuake.unity
     guid: aa405e3fea1885945beec24710736099
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: a420ab19abba85e42886e4194a14a736
   m_configObjects: {}

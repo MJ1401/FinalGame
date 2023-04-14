@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     private static int days = 1;
     private static int month = 9;
 
+    public GameObject failureScreen;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +41,8 @@ public class GameManager : MonoBehaviour
             total += evi;
         }
         totalText.text = "Score: " + total.ToString();
-        if (days <= 30) {dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";}
-        else {
+        dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
+        if (days >= 30) {
             DeadlineMissed();
             days = 1;
             month = month + 1;
@@ -48,7 +50,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void DeadlineMissed() {
-        print("You failed!");
+        failureScreen.SetActive(true);
     }
 
     public void DialogShow(string text) {
