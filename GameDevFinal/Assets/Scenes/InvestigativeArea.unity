@@ -10314,7 +10314,7 @@ MonoBehaviour:
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
   totalText: {fileID: 813027076}
-  dateText: {fileID: 0}
+  dateText: {fileID: 48856804}
 --- !u!114 &2057996033
 MonoBehaviour:
   m_ObjectHideFlags: 0

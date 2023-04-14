@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI dateText;
     private static int days = 1;
+    private static int month = 9;
 
 
     // Start is called before the first frame update
@@ -38,7 +39,16 @@ public class GameManager : MonoBehaviour
             total += evi;
         }
         totalText.text = "Score: " + total.ToString();
-        dateText.text = "Date: 9/" + days.ToString() + "/1811";
+        if (days <= 30) {dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";}
+        else {
+            DeadlineMissed();
+            days = 1;
+            month = month + 1;
+        }
+    }
+
+    public void DeadlineMissed() {
+        print("You failed!");
     }
 
     public void DialogShow(string text) {
