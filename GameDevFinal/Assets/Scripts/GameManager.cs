@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+    public GameObject Title;
+    public GameObject InvesArea;
+    public GameObject PostQuakeInves;
+    public GameObject Credits;
+
     public TextMeshProUGUI totalText;
     private int total;
 
@@ -135,12 +140,47 @@ public class GameManager : MonoBehaviour
         // }
     }
 
-    
-
     public void ChangeScene(string scene){
         print(scene);
         RemoveAllUsedEvidence();
         StartCoroutine(LoadYourAsyncScene(scene));
+        if (scene == "TitleScreen") {
+            dialogBox.SetActive(false);
+            Title.SetActive(true);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
+        } else if (scene == "InvestigativeArea") {
+            dialogBox.SetActive(false);
+            Title.SetActive(false);
+            InvesArea.SetActive(true);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
+        } else if (scene == "GN_Test" || scene == "SampleScene") {
+            dialogBox.SetActive(true);
+            Title.SetActive(false);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
+        } else if (scene == "Credits") {
+            dialogBox.SetActive(false);
+            Title.SetActive(false);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(true);
+        } else if (scene == "PostQuake") {
+            dialogBox.SetActive(false);
+            Title.SetActive(false);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(true);
+            Credits.SetActive(false);
+        } else {
+            dialogBox.SetActive(false);
+            Title.SetActive(true);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
+        }
     }
 
 }
