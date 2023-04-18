@@ -35,10 +35,12 @@ public class Highlight : MonoBehaviour
             target = new Color(1f, 0f, 0f, 0.3f);
             wasClicked = false;
             GameManager.DeleteUsedEvidence(evidence);
+            //GameManager.ScoreUpdate();
         } else {
             target = new Color(0f, 1f, 0f, 0.3f);
             wasClicked = true;
             GameManager.AddUsedEvidence(evidence, score);
+            //GameManager.ScoreUpdate();
         }
     }
 

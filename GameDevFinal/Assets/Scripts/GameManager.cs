@@ -26,10 +26,10 @@ public class GameManager : MonoBehaviour
     private int total;
 
     public TextMeshProUGUI dateText;
-    private static int days = 1;
-    private static int month = 9;
+    private int days = 1;
+    private int month = 9;
 
-    public GameObject failureScreen;
+    public static GameObject failureScreen;
 
 
     // Start is called before the first frame update
@@ -41,11 +41,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void ScoreUpdate() {
         total = 0;
         foreach (var evi in used_evidence.Values) {
             total += evi;
         }
         totalText.text = "Score: " + total.ToString();
+    }
+
+    public void DateUpdate() {
         dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
         if (days >= 30) {
             DeadlineMissed();
@@ -54,7 +61,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void DeadlineMissed() {
+    public static void DeadlineMissed() {
         failureScreen.SetActive(true);
     }
 
@@ -63,6 +70,8 @@ public class GameManager : MonoBehaviour
         RemoveAllUsedEvidence();
         days = 1;
         month = 9;
+        ScoreUpdate();
+        DateUpdate();
     }
 
     public void DialogShow(string text) {
@@ -101,6 +110,7 @@ public class GameManager : MonoBehaviour
         } else {
             print("Already Added Evidence");
         }
+        // ScoreUpdate();
     }
 
     public static void DeleteUsedEvidence(string evi) {
@@ -109,14 +119,17 @@ public class GameManager : MonoBehaviour
         } else {
             print("That evidence is not being used");
         }
+        // ScoreUpdate();
     }
 
     public static void RemoveAllUsedEvidence() {
         used_evidence.Clear();
+        // ScoreUpdate();
     }
 
     public void AddDays(int n) {
         days = n + days;
+        // DateUpdate();
     }
 
     void Awake(){
@@ -140,35 +153,32 @@ public class GameManager : MonoBehaviour
         // }
     }
 
-    public void ChangeScene(string scene){
-        print(scene);
-        RemoveAllUsedEvidence();
-        StartCoroutine(LoadYourAsyncScene(scene));
-        if (scene == "TitleScreen") {
+    public void ChangeUI(string UI) {
+        if (UI == "TitleScreen") {
             dialogBox.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
-        } else if (scene == "InvestigativeArea") {
+        } else if (UI == "InvestigativeArea") {
             dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(true);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
-        } else if (scene == "GN_Test" || scene == "SampleScene") {
-            dialogBox.SetActive(true);
+        } else if (UI == "GN_Test" || UI == "SampleScene") {
+            dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
-        } else if (scene == "Credits") {
+        } else if (UI == "Credits") {
             dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(true);
-        } else if (scene == "PostQuake") {
+        } else if (UI == "PostQuake") {
             dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
@@ -181,6 +191,17 @@ public class GameManager : MonoBehaviour
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
         }
+    }
+
+    public void ChangeScene(string scene){
+        print(scene);
+        RemoveAllUsedEvidence();
+        dialogBox.SetActive(false);
+        Title.SetActive(false);
+        InvesArea.SetActive(false);
+        PostQuakeInves.SetActive(false);
+        Credits.SetActive(false);
+        StartCoroutine(LoadYourAsyncScene(scene));
     }
 
 }
