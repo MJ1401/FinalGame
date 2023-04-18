@@ -12496,7 +12496,6 @@ MonoBehaviour:
   Credits: {fileID: 1912463786}
   totalText: {fileID: 1219975777}
   dateText: {fileID: 950500334}
-  failureScreen: {fileID: 1643214534}
 --- !u!4 &1038403564
 Transform:
   m_ObjectHideFlags: 0
