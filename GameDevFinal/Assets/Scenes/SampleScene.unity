@@ -8020,6 +8020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1837659862}
   dialogText: {fileID: 178675619}
+  totalText: {fileID: 0}
+  dateText: {fileID: 0}
+  failureScreen: {fileID: 0}
 --- !u!1 &764710826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10385,6 +10388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1837659862}
   dialogText: {fileID: 178675619}
+  totalText: {fileID: 0}
+  dateText: {fileID: 0}
+  failureScreen: {fileID: 0}
 --- !u!4 &1887962535
 Transform:
   m_ObjectHideFlags: 0

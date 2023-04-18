@@ -1120,6 +1120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
+  totalText: {fileID: 0}
+  dateText: {fileID: 0}
+  failureScreen: {fileID: 0}
 --- !u!4 &1038403564
 Transform:
   m_ObjectHideFlags: 0
