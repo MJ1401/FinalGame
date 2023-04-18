@@ -11,7 +11,7 @@ public class Highlight : MonoBehaviour
 // ... And many more available!
 {
     Image sprite;
-    Color target = Color.red;
+    Color target = new Color(1f, 0f, 0f, 0.3f);
     private bool wasClicked = false;
 
     public string evidence;
@@ -32,11 +32,11 @@ public class Highlight : MonoBehaviour
     {
         print("I was clicked");
         if (wasClicked) {
-            target = Color.red;
+            target = new Color(1f, 0f, 0f, 0.3f);
             wasClicked = false;
             GameManager.DeleteUsedEvidence(evidence);
         } else {
-            target = Color.green;
+            target = new Color(0f, 1f, 0f, 0.3f);
             wasClicked = true;
             GameManager.AddUsedEvidence(evidence, score);
         }
@@ -50,7 +50,7 @@ public class Highlight : MonoBehaviour
     public void OnPointerExit(PointerEventData eventData)
     {
         if (!wasClicked) {
-            target = Color.red;
+            target = new Color(1f, 0f, 0f, 0.3f);
         }
     }
 
