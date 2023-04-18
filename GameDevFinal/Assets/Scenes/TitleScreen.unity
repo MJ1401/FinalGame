@@ -10845,7 +10845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938482671}
   m_Layer: 5
-  m_Name: Title
+  m_Name: 'Title '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12387,9 +12387,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1109175458}
   dialogText: {fileID: 1442616583}
-  totalText: {fileID: 0}
-  dateText: {fileID: 0}
-  failureScreen: {fileID: 0}
+  Title: {fileID: 938482670}
+  InvesArea: {fileID: 452034501}
+  PostQuakeInves: {fileID: 2119289232}
+  Credits: {fileID: 1912463786}
+  totalText: {fileID: 1151085118}
+  dateText: {fileID: 1123722139}
+  failureScreen: {fileID: 624613145}
 --- !u!4 &1038403564
 Transform:
   m_ObjectHideFlags: 0

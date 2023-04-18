@@ -5748,7 +5748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1147737644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10952,6 +10952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1682304631}
   dialogText: {fileID: 166925347}
+  Title: {fileID: 0}
+  InvesArea: {fileID: 0}
+  PostQuakeInves: {fileID: 0}
+  Credits: {fileID: 0}
   totalText: {fileID: 813027076}
   dateText: {fileID: 48856804}
   failureScreen: {fileID: 492667214}
