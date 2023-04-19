@@ -14,6 +14,8 @@ public class Journal : MonoBehaviour
     private static bool infoOne;
     private static bool infoTwo;
 
+    public AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class Journal : MonoBehaviour
 
     public void openingJournal()
     {
+        audio.Play();
         userInterface.SetActive(false);
         openedNotebook.SetActive(true);
         if(infoOne == true){
@@ -30,6 +33,12 @@ public class Journal : MonoBehaviour
         if(infoTwo == true){
             informationTwo.SetActive(true);
         }
+        StartCoroutine(Wait(0.5f));
+    }
+
+    public IEnumerator Wait(float delayInSecs)
+    {
+        yield return new WaitForSeconds(delayInSecs);
     }
 
     public void closingJournal()
