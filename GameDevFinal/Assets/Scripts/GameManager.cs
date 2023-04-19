@@ -143,6 +143,8 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator LoadYourAsyncScene(string scene) {
+        //Play audio here
+        yield return new WaitForSeconds(1.0f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
 
         while(!asyncLoad.isDone) {
