@@ -33,13 +33,9 @@ public class Journal : MonoBehaviour
         if(infoTwo == true){
             informationTwo.SetActive(true);
         }
-        StartCoroutine(Wait(0.5f));
+        
     }
 
-    public IEnumerator Wait(float delayInSecs)
-    {
-        yield return new WaitForSeconds(delayInSecs);
-    }
 
     public void closingJournal()
     {
