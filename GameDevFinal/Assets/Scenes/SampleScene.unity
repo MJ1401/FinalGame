@@ -3695,16 +3695,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -7067,7 +7057,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 871b74a1fad98fd4d97196b17b882a2d, type: 2}
   - m_RefCount: 30
     m_Data: {fileID: 11400000, guid: 4a298b941e70fcc4b9546b89ce6fb2f0, type: 2}
-  - m_RefCount: 204
+  - m_RefCount: 203
     m_Data: {fileID: 11400000, guid: dcb62d18121dfbf488eb97e920b3f639, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 20488ad39fd615242bc822730091e1b6, type: 2}
@@ -7098,7 +7088,7 @@ Tilemap:
     m_Data: {fileID: 845045326, guid: c76478cd946469a4e8aa35c8cbf6c6bb, type: 3}
   - m_RefCount: 30
     m_Data: {fileID: 1372913848, guid: c76478cd946469a4e8aa35c8cbf6c6bb, type: 3}
-  - m_RefCount: 204
+  - m_RefCount: 203
     m_Data: {fileID: -1947782558, guid: c76478cd946469a4e8aa35c8cbf6c6bb, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 617399156, guid: c76478cd946469a4e8aa35c8cbf6c6bb, type: 3}
@@ -7119,7 +7109,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1673598695, guid: c76478cd946469a4e8aa35c8cbf6c6bb, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 672
+  - m_RefCount: 671
     m_Data:
       e00: 1
       e01: 0
@@ -7138,7 +7128,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 672
+  - m_RefCount: 671
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -8006,6 +7996,8 @@ MonoBehaviour:
   openedNotebook: {fileID: 2077194449}
   informationOne: {fileID: 410719661}
   informationTwo: {fileID: 967166044}
+  bookOpenSound: {fileID: 0}
+  bookCloseSound: {fileID: 0}
 --- !u!114 &538923357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8020,9 +8012,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1837659862}
   dialogText: {fileID: 178675619}
+  Title: {fileID: 0}
+  InvesArea: {fileID: 0}
+  PostQuakeInves: {fileID: 0}
+  Credits: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
-  failureScreen: {fileID: 0}
 --- !u!1 &764710826
 GameObject:
   m_ObjectHideFlags: 0
@@ -9399,6 +9394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: []
   evidence_name: 
+  scribble: {fileID: 0}
 --- !u!114 &1458061328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10000,6 +9996,7 @@ MonoBehaviour:
   - 'Line 2 '
   - Line 3
   evidence_name: Evidence 5
+  scribble: {fileID: 0}
 --- !u!61 &1754727271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10388,9 +10385,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1837659862}
   dialogText: {fileID: 178675619}
+  Title: {fileID: 0}
+  InvesArea: {fileID: 0}
+  PostQuakeInves: {fileID: 0}
+  Credits: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
-  failureScreen: {fileID: 0}
 --- !u!4 &1887962535
 Transform:
   m_ObjectHideFlags: 0
