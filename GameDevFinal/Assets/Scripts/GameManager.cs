@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI totalText;
     private int total;
 
+
     public TextMeshProUGUI dateText;
     private int days = 1;
     private int month = 9;

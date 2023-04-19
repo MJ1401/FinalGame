@@ -14,17 +14,18 @@ public class Journal : MonoBehaviour
     private static bool infoOne;
     private static bool infoTwo;
 
-    public AudioSource audio;
+    public AudioSource bookOpenSound;
+    public AudioSource bookCloseSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void openingJournal()
     {
-        audio.Play();
+        bookOpenSound.Play();
         userInterface.SetActive(false);
         openedNotebook.SetActive(true);
         if(infoOne == true){
@@ -39,6 +40,7 @@ public class Journal : MonoBehaviour
 
     public void closingJournal()
     {
+        bookCloseSound.Play();
         userInterface.SetActive(true);
         openedNotebook.SetActive(false);
     }
@@ -55,8 +57,6 @@ public class Journal : MonoBehaviour
             infoTwo = true;
         }
     }
-
-    
 
     // Update is called once per frame
     void Update()

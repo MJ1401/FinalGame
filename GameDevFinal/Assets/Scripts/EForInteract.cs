@@ -79,6 +79,8 @@ public class EForInteract : MonoBehaviour {
 
     private int currentTextIndex = 0;
 
+    public AudioSource scribble;
+
     public void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.gameObject.CompareTag("Player")) {
             canShowDialog = true;
@@ -130,6 +132,7 @@ public class EForInteract : MonoBehaviour {
 
     private void collect() {
         // set text to something like "can I help you? and can repeat"
+        scribble.Play();
         GameManager.AddEvidence(evidence_name);
         print("Evidence collected");
         Journal.addToJournal(evidence_name);
