@@ -12864,9 +12864,10 @@ MonoBehaviour:
   InvesArea: {fileID: 1711551610}
   PostQuakeInves: {fileID: 2119289232}
   Credits: {fileID: 1912463786}
+  UI: {fileID: 24820273}
   totalText: {fileID: 1219975777}
   dateText: {fileID: 950500334}
-  failureScreen: {fileID: 0}
+  failureScreen: {fileID: 1643214534}
 --- !u!4 &1038403564
 Transform:
   m_ObjectHideFlags: 0
