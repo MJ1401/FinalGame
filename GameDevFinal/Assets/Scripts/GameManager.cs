@@ -231,6 +231,7 @@ public class GameManager : MonoBehaviour
     public GameObject InvesArea;
     public GameObject PostQuakeInves;
     public GameObject Credits;
+    public GameObject UI;
 
     public TextMeshProUGUI totalText;
     private int total;
@@ -356,36 +357,42 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadYourAsyncScene(scene));
         if (scene == "TitleScreen") {
             dialogBox.SetActive(false);
+            UI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
         } else if (scene == "InvestigativeArea") {
             dialogBox.SetActive(false);
+            UI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(true);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
         } else if (scene == "GN_Test" || scene == "St.LouisPreQuake") {
             dialogBox.SetActive(false);
+            UI.SetActive(true);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
         } else if (scene == "Credits") {
             dialogBox.SetActive(false);
+            UI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(true);
         } else if (scene == "PostQuake") {
             dialogBox.SetActive(false);
+            UI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(true);
             Credits.SetActive(false);
         } else {
             dialogBox.SetActive(false);
+            UI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
