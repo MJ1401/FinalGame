@@ -54565,8 +54565,10 @@ MonoBehaviour:
   InvesArea: {fileID: 0}
   PostQuakeInves: {fileID: 0}
   Credits: {fileID: 0}
+  UI: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
+  failureScreen: {fileID: 0}
 --- !u!114 &299015230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57014,7 +57016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &518378720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57033,8 +57035,10 @@ MonoBehaviour:
   InvesArea: {fileID: 625964537}
   PostQuakeInves: {fileID: 1148850058}
   Credits: {fileID: 486926348}
+  UI: {fileID: 0}
   totalText: {fileID: 1660815581}
   dateText: {fileID: 187405090}
+  failureScreen: {fileID: 0}
 --- !u!4 &518378721
 Transform:
   m_ObjectHideFlags: 0
@@ -64956,7 +64960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1205254653
 MonoBehaviour:
   m_ObjectHideFlags: 0
