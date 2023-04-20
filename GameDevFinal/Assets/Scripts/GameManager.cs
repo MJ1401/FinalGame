@@ -383,6 +383,13 @@ public class GameManager : MonoBehaviour
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(true);
+        } else if (scene == "Boss") {
+            dialogBox.SetActive(false);
+            UI.SetActive(false);
+            Title.SetActive(false);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
         } else if (scene == "PostQuake") {
             dialogBox.SetActive(false);
             UI.SetActive(false);
