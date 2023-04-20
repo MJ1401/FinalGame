@@ -367,7 +367,7 @@ public class GameManager : MonoBehaviour
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
         } else if (scene == "GN_Test" || scene == "St.LouisPreQuake") {
-            dialogBox.SetActive(true);
+            dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
