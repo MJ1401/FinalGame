@@ -54565,6 +54565,7 @@ MonoBehaviour:
   InvesArea: {fileID: 0}
   PostQuakeInves: {fileID: 0}
   Credits: {fileID: 0}
+  UI: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
   failureScreen: {fileID: 0}
@@ -57034,6 +57035,7 @@ MonoBehaviour:
   InvesArea: {fileID: 625964537}
   PostQuakeInves: {fileID: 1148850058}
   Credits: {fileID: 486926348}
+  UI: {fileID: 0}
   totalText: {fileID: 1660815581}
   dateText: {fileID: 187405090}
   failureScreen: {fileID: 0}
