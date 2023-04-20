@@ -169,7 +169,7 @@ public class GameManager : MonoBehaviour
             InvesArea.SetActive(true);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
-        } else if (UI == "GN_Test" || UI == "SampleScene") {
+        } else if (UI == "GN_Test" || UI == "St.LouisPreQuake") {
             dialogBox.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
