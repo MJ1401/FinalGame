@@ -54567,6 +54567,7 @@ MonoBehaviour:
   Credits: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
+  failureScreen: {fileID: 0}
 --- !u!114 &299015230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57014,7 +57015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &518378720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57035,6 +57036,7 @@ MonoBehaviour:
   Credits: {fileID: 486926348}
   totalText: {fileID: 1660815581}
   dateText: {fileID: 187405090}
+  failureScreen: {fileID: 0}
 --- !u!4 &518378721
 Transform:
   m_ObjectHideFlags: 0
