@@ -18401,7 +18401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: It sure is nice today...
+  text: I could've sworn the river was flowing backwards the other day...
 --- !u!61 &746134564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19095,9 +19095,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - Good lord! You startled me...
-  - Talk around the town is this conflict up north is non-sense...
-  - Maybe we can all just get along
+  - My goodness! You've got to stop that...
+  - Things are getting tense up north...
+  - All we can think about here are those quakes...
+  - Some say there was a volcano!
   evidence_name: 
   scribble: {fileID: 0}
 --- !u!61 &1033061326
@@ -24307,10 +24308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - Have you heard?...
-  - Tecumseh's been prophesizing again...
-  - Says he's gonna stomp down all our houses!
-  - Man that guy is crazy...
+  - My goodness...
+  - He really tried!
+  - Perhaps Tecumseh is the prophet that he says he is...
+  - I felt the whole ground shake!
   evidence_name: Evidence 5
   scribble: {fileID: 0}
 --- !u!61 &1754727271
@@ -24396,7 +24397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Excuse you! Darn journalists...
+  text: Do you ever get out of people's way?
 --- !u!212 &1760869909
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24796,10 +24797,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - How can I help you?...
-  - For the newspaper? Of course!...
-  - I believe there's a difference of opinion out here...
-  - I suggest you venture out to get some REAL opinions.
+  - You again!
+  - I have heard many stories...
+  - 'I suggest you return down where I sent you last time... '
+  - Maybe you can lay some rumors to rest.
   evidence_name: 
   scribble: {fileID: 0}
 --- !u!1 &1871178825
