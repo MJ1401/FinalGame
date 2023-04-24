@@ -55,12 +55,12 @@ TagManager:
   - name: Buldings C
     uniqueID: 3038287249
     locked: 0
+  - name: NPCs
+    uniqueID: 622276537
+    locked: 0
   - name: Player
     uniqueID: 3989087379
     locked: 0
   - name: Buildings NC
     uniqueID: 1636294707
-    locked: 0
-  - name: NPCs
-    uniqueID: 622276537
     locked: 0
