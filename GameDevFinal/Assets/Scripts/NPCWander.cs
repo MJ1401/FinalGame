@@ -8,23 +8,27 @@ public class NPCWander : MonoBehaviour {
 
     private int currentWaypointIndex = 0;
     private Coroutine moveToWaypointCoroutine;
+    private Rigidbody2D rb;
 
     void Start() {
+        rb = GetComponent<Rigidbody2D>();
         moveToWaypointCoroutine = StartCoroutine(MoveToWaypoint());    
     }
 
     private IEnumerator MoveToWaypoint(){
-        while (true)
-        {
+        while (true){
             Waypoint currentWaypoint = waypoints[currentWaypointIndex];
             Vector3 targetPosition = currentWaypoint.transform.position;
-            Quaternion targetRotation = Quaternion.LookRotation(targetPosition - transform.position, Vector3.forward);
+            Vector3 direction = (targetPosition - transform.position).normalized;
 
             // Move towards the waypoint
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f) {
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+                rb.velocity = direction * moveSpeed;
                 yield return null;
             }
+
+            rb.velocity = Vector2.zero;
 
             // Wait at the waypoint if specified
             if (currentWaypoint.waitTime > 0) {
@@ -43,18 +47,17 @@ public class NPCWander : MonoBehaviour {
 
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player"))
-        {
-            if (moveToWaypointCoroutine != null) {
+        if (other.CompareTag("Player")){
+            if (moveToWaypointCoroutine != null){
                 StopCoroutine(moveToWaypointCoroutine);
+                moveToWaypointCoroutine = null;
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Player"))
-        {
-            if (moveToWaypointCoroutine == null) {
+        if (other.CompareTag("Player")) {
+            if (moveToWaypointCoroutine == null){
                 moveToWaypointCoroutine = StartCoroutine(MoveToWaypoint());
             }
         }
