@@ -5,7 +5,6 @@ using UnityEngine;
 public class NPCWander : MonoBehaviour {
     public Waypoint[] waypoints;
     public float moveSpeed = 2f;
-    public float rotationSpeed = 5f;
 
     private int currentWaypointIndex = 0;
 
@@ -19,13 +18,6 @@ public class NPCWander : MonoBehaviour {
             Waypoint currentWaypoint = waypoints[currentWaypointIndex];
             Vector3 targetPosition = currentWaypoint.transform.position;
             Quaternion targetRotation = Quaternion.LookRotation(targetPosition - transform.position, Vector3.forward);
-
-            // Rotate towards the waypoint
-            while (Quaternion.Angle(transform.rotation, targetRotation) > 1f) {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-                transform.rotation = new Quaternion(0, 0, transform.rotation.z, transform.rotation.w); // Lock rotation on the z-axis
-                yield return null;
-            }
 
             // Move towards the waypoint
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f) {
