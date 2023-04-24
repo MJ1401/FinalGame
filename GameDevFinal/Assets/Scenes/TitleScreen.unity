@@ -10150,7 +10150,7 @@ RectTransform:
   - {fileID: 1502456694}
   - {fileID: 823024128}
   m_Father: {fileID: 1711551611}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14773,7 +14773,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is some sample text for what evidence 5 would say
+  m_text: 'Tecumseh is predicting a big disaster, but some of the townspeople are
+    skepticle. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21130,8 +21131,8 @@ RectTransform:
   m_Children:
   - {fileID: 1019759951}
   - {fileID: 1579299957}
-  - {fileID: 817079131}
   - {fileID: 1939247209}
+  - {fileID: 817079131}
   - {fileID: 24201214}
   - {fileID: 1877642779}
   - {fileID: 1165744980}
@@ -21931,7 +21932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is some sample text for what evidence 2 would say
+  m_text: 'There could be a war coming soon. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23410,7 +23411,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1711551611}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
