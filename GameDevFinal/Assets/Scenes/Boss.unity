@@ -263,7 +263,7 @@ MonoBehaviour:
   - Our citizens only want the truth!
   - Submitting false information will get you a lower score.
   - Complete your article on time or else you will be fired!
-  - 'Remember, it takes different amount of days to travel between cities. '
+  - Remember, travel times vary between locations.
   - 'Use your time wisely. '
   - 'Good luck! I believe in you. '
   - Press the start button to continue or press 'e' to repeat the conversation.
@@ -4914,7 +4914,7 @@ Camera:
   m_GameObject: {fileID: 1880649755}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
