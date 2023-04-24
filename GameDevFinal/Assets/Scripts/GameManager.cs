@@ -95,6 +95,8 @@ public class GameManager : MonoBehaviour
 
     public static void RemoveAllEvidence() {
         evidence.Clear();
+        print("Evidence Removed");
+        print(evidence.Count);
     }
 
     public static void AddUsedEvidence(string evi, int score) {
@@ -126,7 +128,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         } else {
-            // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 

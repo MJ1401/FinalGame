@@ -23,6 +23,8 @@ public class EvidenceWatcher : MonoBehaviour
         foreach (var evi in evidence) {
             if (GameManager.evidence.ContainsKey(evi.name)) { // Learned from https://code-maze.com/csharp-detect-dictionary-key-exists/
                 evi.SetActive(true);
+            } else {
+                evi.SetActive(false);
             }
         }
     }
