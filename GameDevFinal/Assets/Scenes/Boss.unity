@@ -248,8 +248,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - Welcome!
-  - This a test
+  - To advance through dialog in game, press 'e' like you just did.
+  - You are very good at this!
+  - 'Who am I? '
+  - 'I am your News Paper Editor for the St. Louis Newspaper. '
+  - You work for me and create articles.
+  - Gather information by traveling to different locations.
+  - The information will appear in your jounral and your home base.
+  - Turn evidence that you want to use green before you hit submit.
+  - 'Do NOT choose untruthful pieces of information.  '
+  - Our citizens only want the truth!
+  - Submitting false information will get you a lower score.
+  - Complete your article on time or else you will be fired!
+  - 'Remember, it takes different amount of days to travel between cities. '
+  - 'Use your time wisely. '
+  - 'Good luck! I believe in you. '
+  - Press the start button to continue or press 'e' to repeat the conversation.
   evidence_name: 
   scribble: {fileID: 0}
 --- !u!1 &201124973
