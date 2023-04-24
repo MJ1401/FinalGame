@@ -7,9 +7,10 @@ public class NPCWander : MonoBehaviour {
     public float moveSpeed = 2f;
 
     private int currentWaypointIndex = 0;
+    private Coroutine moveToWaypointCoroutine;
 
     void Start() {
-        StartCoroutine(MoveToWaypoint());
+        moveToWaypointCoroutine = StartCoroutine(MoveToWaypoint());    
     }
 
     private IEnumerator MoveToWaypoint(){
@@ -39,4 +40,24 @@ public class NPCWander : MonoBehaviour {
     void Update() {
         
     }
+
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player"))
+        {
+            if (moveToWaypointCoroutine != null) {
+                StopCoroutine(moveToWaypointCoroutine);
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Player"))
+        {
+            if (moveToWaypointCoroutine == null) {
+                moveToWaypointCoroutine = StartCoroutine(MoveToWaypoint());
+            }
+        }
+    }
+
 }
