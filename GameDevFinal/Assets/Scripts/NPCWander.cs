@@ -63,4 +63,19 @@ public class NPCWander : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player")){
+            StopCoroutine(moveToWaypointCoroutine);
+            moveToWaypointCoroutine = null;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player")){
+            if (moveToWaypointCoroutine == null) {
+                moveToWaypointCoroutine = StartCoroutine(MoveToWaypoint());
+            }
+        }
+    }
+
 }
