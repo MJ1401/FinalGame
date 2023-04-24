@@ -18987,7 +18987,7 @@ MonoBehaviour:
   - Good lord! You startled me...
   - Talk around the town is this conflict up north is non-sense...
   - Maybe we can all just get along
-  evidence_name: 
+  evidence_name: Evi2
   scribble: {fileID: 0}
 --- !u!61 &1033061326
 BoxCollider2D:
@@ -24268,7 +24268,7 @@ MonoBehaviour:
   - Tecumseh's been prophesizing again...
   - Says he's gonna stomp down all our houses!
   - Man that guy is crazy...
-  evidence_name: Evidence 5
+  evidence_name: Evi5
   scribble: {fileID: 0}
 --- !u!61 &1754727271
 BoxCollider2D:
@@ -24757,7 +24757,7 @@ MonoBehaviour:
   - For the newspaper? Of course!...
   - I believe there's a difference of opinion out here...
   - I suggest you venture out to get some REAL opinions.
-  evidence_name: 
+  evidence_name: Evi3
   scribble: {fileID: 0}
 --- !u!1 &1871178825
 GameObject:
