@@ -254,6 +254,9 @@ MonoBehaviour:
   - 'I am your News Paper Editor for the St. Louis Newspaper. '
   - You work for me and create articles.
   - Gather information by traveling to different locations.
+  - Then talk to townspeople to gain information.
+  - Important people will have an exclamation above them.
+  - You must press "e" to talk to those people.
   - The information will appear in your jounral and your home base.
   - Turn evidence that you want to use green before you hit submit.
   - 'Do NOT choose untruthful pieces of information.  '
