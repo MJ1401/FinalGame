@@ -5,7 +5,6 @@ using UnityEngine;
 public class NPCWander : MonoBehaviour {
     public Waypoint[] waypoints;
     public float moveSpeed = 2f;
-    public float rotationSpeed = 5f;
 
     private int currentWaypointIndex = 0;
 
