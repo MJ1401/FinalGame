@@ -6218,7 +6218,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: St.LouisPostQuake
+          m_StringArgument: St.LouisPostQuakes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &525722603
@@ -13693,6 +13693,7 @@ GameObject:
   - component: {fileID: 1038403565}
   - component: {fileID: 1038403566}
   - component: {fileID: 1038403567}
+  - component: {fileID: 1038403569}
   - component: {fileID: 1038403568}
   m_Layer: 0
   m_Name: GameManager
@@ -13889,6 +13890,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1038403569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038403562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54182422b9fbe447b75d0bf20f0d8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userInterface: {fileID: 1238759140}
+  openedNotebook: {fileID: 1748776900}
+  informationOne: {fileID: 2055706547}
+  informationTwo: {fileID: 1160640774}
+  bookOpenSound: {fileID: 1038403568}
+  bookCloseSound: {fileID: 1038403568}
 --- !u!1 &1044019419
 GameObject:
   m_ObjectHideFlags: 0
@@ -22665,7 +22684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1038403567}
+      - m_Target: {fileID: 1038403569}
         m_TargetAssemblyTypeName: Journal, Assembly-CSharp
         m_MethodName: closingJournal
         m_Mode: 1
