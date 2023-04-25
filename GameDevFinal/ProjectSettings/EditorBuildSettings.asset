@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RiverPostQuake.unity
     guid: adc09deb0be854377ae1eea4d4b5db28
+  - enabled: 1
+    path: Assets/Scenes/NewMadridPostQuake.unity
+    guid: 746a04558365e3f428a791339a028da1
+  - enabled: 1
+    path: Assets/Scenes/RiverPreQuake.unity
+    guid: c4d02e6e4dde14c3a8b1ca991d30c7d3
+  - enabled: 1
+    path: Assets/Scenes/St.LouisPostQuakes.unity
+    guid: 6fda6b22a5c554ec482b08bddac3e170
   m_configObjects: {}

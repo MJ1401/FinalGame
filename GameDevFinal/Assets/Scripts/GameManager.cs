@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject Credits;
     public GameObject UI;
     public GameObject BossUI;
+    public GameObject PostUI;
 
     public TextMeshProUGUI totalText;
     private int total;
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
     private static int month = 9;
 
     public GameObject failureScreen;
+
+    private bool groundshake = false;
 
 
     // Start is called before the first frame update
@@ -151,22 +154,32 @@ public class GameManager : MonoBehaviour
         if (scene == "TitleScreen") {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(false);
         } else if (scene == "InvestigativeArea") {
+            groundshake = false;
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(true);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(false);
-        } else if (scene == "GN_Test" || scene == "St.LouisPreQuake") {
+        } else if (scene == "GN_Test" || scene == "St.LouisPreQuake" || scene == "St.LouisPostQuake" || scene == "RiverPreQuake" || 
+                scene == "RiverPostQuake" || scene == "NewMadridPostQuake") {
             dialogBox.SetActive(false);
-            UI.SetActive(true);
+            if (groundshake) {
+                PostUI.SetActive(true);
+                UI.SetActive(false);
+            } else {
+                UI.SetActive(true);
+                PostUI.SetActive(false);
+            }
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
@@ -175,6 +188,7 @@ public class GameManager : MonoBehaviour
         } else if (scene == "Credits") {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
@@ -183,14 +197,17 @@ public class GameManager : MonoBehaviour
         } else if (scene == "Boss") {
             dialogBox.SetActive(true);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(true);
         } else if (scene == "PostQuake") {
+            groundshake = true;
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(true);
@@ -199,6 +216,7 @@ public class GameManager : MonoBehaviour
         } else {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            PostUI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
