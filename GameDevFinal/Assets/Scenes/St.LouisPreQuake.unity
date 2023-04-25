@@ -31012,6 +31012,7 @@ MonoBehaviour:
   Credits: {fileID: 0}
   UI: {fileID: 0}
   BossUI: {fileID: 0}
+  PostUI: {fileID: 0}
   totalText: {fileID: 0}
   dateText: {fileID: 0}
   failureScreen: {fileID: 0}
