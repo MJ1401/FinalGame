@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: a420ab19abba85e42886e4194a14a736
+  - enabled: 1
     path: Assets/Scenes/St.LouisPreQuake.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -21,15 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PostQuake.unity
     guid: aa405e3fea1885945beec24710736099
   - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
-    guid: a420ab19abba85e42886e4194a14a736
-  - enabled: 1
     path: Assets/Scenes/Boss.unity
     guid: 5c948f0d2b24cae45b2ba3241b966dfa
   - enabled: 0
-    path: Assets/Scenes/St.LouisPostQuake.unity
-    guid: a55bde5c9a8ad440896170ec9a920242
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/RiverPostQuake.unity
     guid: adc09deb0be854377ae1eea4d4b5db28
   - enabled: 1
