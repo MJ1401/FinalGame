@@ -56,7 +56,11 @@ public class Highlight : MonoBehaviour
         }
     }
 
+    public void ResetColor() {
+        target = new Color(1f, 0f, 0f, 0.3f);
+    }
+
     public void OnMouseUp() {
-    print("Mouse Up Test");
+        print("Mouse Up Test");
     }
 }
