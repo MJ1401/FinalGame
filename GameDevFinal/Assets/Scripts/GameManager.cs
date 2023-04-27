@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI totalText;
     private int total;
+    public TextMeshProUGUI secondTotal;
 
     public TextMeshProUGUI dateText;
     private static int days = 1;
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
             total += evi;
         }
         totalText.text = "Score: " + total.ToString();
+        secondTotal.text = "Score: " + total.ToString();
         dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
         if (days >= 30) {
             DeadlineMissed();
