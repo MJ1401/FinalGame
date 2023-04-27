@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string scene){
         print(scene);
-        RemoveAllUsedEvidence();
+        // RemoveAllUsedEvidence();
         StartCoroutine(LoadYourAsyncScene(scene));
         if (scene == "TitleScreen") {
             dialogBox.SetActive(false);
