@@ -30,8 +30,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI secondTotal;
 
     public TextMeshProUGUI dateText;
-    private static int days = 1;
+    public TextMeshProUGUI daysLeft;
+    private static int days = 20;
     private static int month = 9;
+    private static int finalDay = 30;
 
     public GameObject failureScreen;
 
@@ -53,8 +55,9 @@ public class GameManager : MonoBehaviour
         }
         totalText.text = "Score: " + total.ToString();
         secondTotal.text = "Score: " + total.ToString();
+        daysLeft.text = "Days Left: " + (finalDay - days).ToString();
         dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
-        if (days >= 30) {
+        if (days > finalDay) {
             DeadlineMissed();
             days = 1;
             month = month + 1;
