@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/RiverPostQuake.unity
     guid: adc09deb0be854377ae1eea4d4b5db28
   - enabled: 1
