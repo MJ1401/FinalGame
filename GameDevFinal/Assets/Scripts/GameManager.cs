@@ -208,7 +208,17 @@ public class GameManager : MonoBehaviour
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(true);
-        } else if (scene == "PostQuake") {
+        } else if (scene == "Cutscene") {
+            dialogBox.SetActive(false);
+            UI.SetActive(false);
+            PostUI.SetActive(false);
+            Title.SetActive(true);
+            InvesArea.SetActive(false);
+            PostQuakeInves.SetActive(false);
+            Credits.SetActive(false);
+            BossUI.SetActive(false);
+        }
+        else if (scene == "PostQuake") {
             groundshake = true;
             dialogBox.SetActive(false);
             UI.SetActive(false);
