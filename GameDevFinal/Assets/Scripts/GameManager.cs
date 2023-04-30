@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     private static int days = 20;
     private static int month = 9;
     private static int pDays = 20;
-    private static int pMonth = 4;
+    private static int pMonth = 5;
     private static int finalDay = 30;
     private static int pFinalDay = 30;
 
