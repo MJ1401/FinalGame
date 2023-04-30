@@ -31,11 +31,17 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI dateText;
     public TextMeshProUGUI daysLeft;
+    public TextMeshProUGUI postDateText;
+    public TextMeshProUGUI postDaysLeft;
     private static int days = 20;
     private static int month = 9;
+    private static int pDays = 20;
+    private static int pMonth = 4;
     private static int finalDay = 30;
+    private static int pFinalDay = 30;
 
     public GameObject failureScreen;
+    public GameObject postFailureScreen;
 
     private bool groundshake = false;
 
@@ -57,15 +63,28 @@ public class GameManager : MonoBehaviour
         secondTotal.text = "Score: " + total.ToString();
         daysLeft.text = "Days Left: " + (finalDay - days).ToString();
         dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
+        postDaysLeft.text = "Days Left: " + (finalDay - days).ToString();
+        postDateText.text = "Date: " + month + "/" + days.ToString() + "/1812";
         if (days > finalDay) {
             DeadlineMissed();
             days = 1;
             month = month + 1;
         }
+        if (groundshake) {
+            if (pDays > pFinalDay) {
+                PostDeadlineMissed();
+                pDays = 1;
+                pMonth = pMonth + 1;
+            }
+        }
     }
 
     public void DeadlineMissed() {
         failureScreen.SetActive(true);
+    }
+
+    public void PostDeadlineMissed() {
+        postFailureScreen.SetActive(true);
     }
 
     public void ResetScene() {
