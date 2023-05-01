@@ -37,7 +37,6 @@ public class Journal : MonoBehaviour
         
     }
 
-
     public void closingJournal()
     {
         bookCloseSound.Play();
