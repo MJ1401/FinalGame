@@ -52054,11 +52054,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: River People
+  test_evidence: Have you seen the river people yet? They come out from the depths
+    of the river at night. I am standing watch. Leave me be.
+  test_evidence_summary: River People
   test_collected: 0
-  score: 0
+  score: -25
 --- !u!1 &187405088
 GameObject:
   m_ObjectHideFlags: 0
