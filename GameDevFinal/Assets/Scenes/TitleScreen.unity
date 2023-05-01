@@ -15131,6 +15131,18 @@ MonoBehaviour:
           m_StringArgument: InvestigativeArea
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1038403570}
+        m_TargetAssemblyTypeName: EvidenceWatcher, Assembly-CSharp
+        m_MethodName: TestShowEvidence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &861291853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18123,14 +18135,14 @@ MonoBehaviour:
   - {fileID: 587801286}
   - {fileID: 1502456693}
   - {fileID: 823024127}
-  evidencePieceOne: {fileID: 0}
-  evidencePieceTwo: {fileID: 0}
-  evidencePieceThree: {fileID: 0}
-  evidencePieceFour: {fileID: 0}
-  evidencePieceFive: {fileID: 0}
-  evidencePieceSix: {fileID: 0}
-  evidencePieceSeven: {fileID: 0}
-  evidencePieceEight: {fileID: 0}
+  evidencePieceOne: {fileID: 95974540}
+  evidencePieceTwo: {fileID: 1870488842}
+  evidencePieceThree: {fileID: 1913089253}
+  evidencePieceFour: {fileID: 1437033664}
+  evidencePieceFive: {fileID: 1515279871}
+  evidencePieceSix: {fileID: 587801290}
+  evidencePieceSeven: {fileID: 1502456697}
+  evidencePieceEight: {fileID: 823024131}
 --- !u!114 &1038403566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18248,7 +18260,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038403562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f54182422b9fbe447b75d0bf20f0d8a7, type: 3}
   m_Name: 
@@ -18281,13 +18293,13 @@ MonoBehaviour:
   - {fileID: 1071392117}
   - {fileID: 415228480}
   evidencePieceOne: {fileID: 95974540}
-  evidencePieceTwo: {fileID: 0}
-  evidencePieceThree: {fileID: 0}
-  evidencePieceFour: {fileID: 0}
-  evidencePieceFive: {fileID: 0}
-  evidencePieceSix: {fileID: 0}
-  evidencePieceSeven: {fileID: 0}
-  evidencePieceEight: {fileID: 0}
+  evidencePieceTwo: {fileID: 1870488842}
+  evidencePieceThree: {fileID: 1913089253}
+  evidencePieceFour: {fileID: 1437033664}
+  evidencePieceFive: {fileID: 1515279871}
+  evidencePieceSix: {fileID: 587801290}
+  evidencePieceSeven: {fileID: 1502456697}
+  evidencePieceEight: {fileID: 823024131}
 --- !u!1 &1044019419
 GameObject:
   m_ObjectHideFlags: 0

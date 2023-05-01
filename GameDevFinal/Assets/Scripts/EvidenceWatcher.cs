@@ -5,6 +5,7 @@ using UnityEngine;
 public class EvidenceWatcher : MonoBehaviour
 {
 
+    public static EvidenceWatcher Instance {get; private set;}
     public GameObject[] evidence;
     private List<TestEvidencePiece> Pieces = new List<TestEvidencePiece>();
 
@@ -30,13 +31,15 @@ public class EvidenceWatcher : MonoBehaviour
         Pieces.Add(evidencePieceSix);
         Pieces.Add(evidencePieceSeven);
         Pieces.Add(evidencePieceEight);
+
+        TestShowEvidence();
     }
 
     // Update is called once per frame
     void Update()
     {
         //ShowEvidence();
-        TestShowEvidence();
+        //TestShowEvidence();
     }
 
     public void ShowEvidence() {
@@ -50,8 +53,10 @@ public class EvidenceWatcher : MonoBehaviour
     }
 
     public void TestShowEvidence(){
+        index = 0;
         foreach (var item in GameManager.TestEvidenceList)
-        {
+        {   
+            print(item);
             Pieces[index].eviSummary.text = item.test_evidence_summary;
             Pieces[index].eviFullText.text = item.test_evidence;
             Pieces[index].eviPaper.SetActive(true);

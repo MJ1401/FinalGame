@@ -1956,6 +1956,7 @@ MonoBehaviour:
     Sometimes I feel the ground rumble from the creature's steps.
   test_evidence_summary: Creature in the woods
   test_collected: 0
+  score: -25
 --- !u!1 &111164225
 GameObject:
   m_ObjectHideFlags: 0
@@ -61111,6 +61112,7 @@ MonoBehaviour:
   PostQuakeInves: {fileID: 1148850058}
   Credits: {fileID: 486926348}
   UI: {fileID: 0}
+  testNotebook: {fileID: 0}
   BossUI: {fileID: 0}
   PostUI: {fileID: 0}
   totalText: {fileID: 1660815581}
@@ -62804,7 +62806,6 @@ MonoBehaviour:
   - Massive destruction that wipes out 1/3 of the people.
   evidence_name: Evi7
   testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
 --- !u!61 &632093519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68931,6 +68932,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 964984497}
+  - {fileID: 2119644334}
   m_Father: {fileID: 468905125}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69059,10 +69061,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text:
   - I would like this area to become part of the United States.
-  - Some people do not want that.
+  - Some folks might disagree with me on that.
   evidence_name: Evi1
-  testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
+  testEvi: {fileID: 2119644335}
 --- !u!61 &1096000120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76273,7 +76274,6 @@ MonoBehaviour:
   - Sometimes I feel the ground rumble from the creature's steps.
   evidence_name: Evi4
   testEvi: {fileID: 103356774}
-  testJournal: {fileID: 0}
 --- !u!114 &1657408942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79943,7 +79943,6 @@ MonoBehaviour:
     of ice had broken.
   evidence_name: informationTwo
   testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
 --- !u!61 &1980269671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83767,6 +83766,56 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2119644333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119644334}
+  - component: {fileID: 2119644335}
+  m_Layer: 0
+  m_Name: Evidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119644334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119644333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1096000116}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119644335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119644333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: Unionist Pre
+  test_evidence: I would like this area to become part of the United States. Some
+    folks might disagree with me on that.
+  test_evidence_summary: In favor of joining the United States.
+  test_collected: 0
+  score: 20
 --- !u!1 &2139678079
 GameObject:
   m_ObjectHideFlags: 0
