@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public GameObject PostQuakeInves;
     public GameObject Credits;
     public GameObject UI;
+    public GameObject testNotebook;
     public GameObject BossUI;
     public GameObject PostUI;
 
@@ -46,23 +47,23 @@ public class GameManager : MonoBehaviour
     private bool groundshake = false;
 
     //GABBY TEST AREA
-    private TestEvidence testPieceOne;
-    private TestEvidence testPieceTwo;
-    private TestEvidence testPieceThree;
+    // private TestEvidence testPieceOne;
+    // private TestEvidence testPieceTwo;
+    // private TestEvidence testPieceThree;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        testPieceOne.setEvidenceName("Houses are on fire");
-        testPieceOne.setEvidence("There are houses burning everywhere! Soon there may be nothing left!");
-        testPieceOne.setSummary("There are houses burning");
-        testPieceOne.setCollected(false);
+        // testPieceOne.setEvidenceName("Houses are on fire");
+        // testPieceOne.setEvidence("There are houses burning everywhere! Soon there may be nothing left!");
+        // testPieceOne.setSummary("There are houses burning");
+        // testPieceOne.setCollected(false);
 
-        testPieceOne.setEvidenceName("Churches are on fire");
-        testPieceOne.setEvidence("There are churches burning everywhere! Soon there may be nothing left!");
-        testPieceOne.setSummary("There are churches burning");
-        testPieceOne.setCollected(false);
+        // testPieceOne.setEvidenceName("Churches are on fire");
+        // testPieceOne.setEvidence("There are churches burning everywhere! Soon there may be nothing left!");
+        // testPieceOne.setSummary("There are churches burning");
+        // testPieceOne.setCollected(false);
     }
 
     // Update is called once per frame
@@ -197,10 +198,12 @@ public class GameManager : MonoBehaviour
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(false);
+            testNotebook.SetActive(false);
         } else if (scene == "InvestigativeArea") {
             groundshake = false;
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(true);
@@ -225,6 +228,7 @@ public class GameManager : MonoBehaviour
         } else if (scene == "Credits") {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
@@ -234,6 +238,7 @@ public class GameManager : MonoBehaviour
         } else if (scene == "Boss") {
             dialogBox.SetActive(true);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
@@ -243,6 +248,7 @@ public class GameManager : MonoBehaviour
         } else if (scene == "Cutscene") {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);
@@ -254,6 +260,7 @@ public class GameManager : MonoBehaviour
             groundshake = true;
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(false);
             InvesArea.SetActive(false);
@@ -263,6 +270,7 @@ public class GameManager : MonoBehaviour
         } else {
             dialogBox.SetActive(false);
             UI.SetActive(false);
+            testNotebook.SetActive(false);
             PostUI.SetActive(false);
             Title.SetActive(true);
             InvesArea.SetActive(false);

@@ -76,6 +76,7 @@ public class EForInteract : MonoBehaviour {
     private bool dialogShown;
 
     public string evidence_name;
+    public TestEvidence testEvi;
 
     private int currentTextIndex = 0;
 
@@ -135,7 +136,8 @@ public class EForInteract : MonoBehaviour {
         // scribble.Play();
         GameManager.AddEvidence(evidence_name);
         print("Evidence collected");
-        Journal.addToJournal(evidence_name);
+        //Journal.addToJournal(evidence_name);
+        testJournal.Instance.testAddToJournal(testEvi); 
     }
 
 }
