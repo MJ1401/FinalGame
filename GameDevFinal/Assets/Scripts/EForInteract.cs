@@ -137,7 +137,7 @@ public class EForInteract : MonoBehaviour {
         GameManager.AddEvidence(evidence_name);
         print("Evidence collected");
         //Journal.addToJournal(evidence_name);
-        testJournal.Instance.testAddToJournal(testEvi); 
+        //testJournal.Instance.testAddToJournal(testEvi); 
     }
 
 }
