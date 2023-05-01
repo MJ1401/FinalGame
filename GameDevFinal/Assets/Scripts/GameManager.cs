@@ -171,6 +171,10 @@ public class GameManager : MonoBehaviour
         days = n + days;
     }
 
+    public void PAddDays(int n) {
+        pDays = n + pDays;
+    }
+
     void Awake(){
         if (Instance == null){
             Instance = this;
