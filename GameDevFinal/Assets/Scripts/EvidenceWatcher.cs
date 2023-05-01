@@ -14,6 +14,8 @@ public class EvidenceWatcher : MonoBehaviour
     public TestEvidencePiece evidencePieceFour;
     public TestEvidencePiece evidencePieceFive;
     public TestEvidencePiece evidencePieceSix;
+    public TestEvidencePiece evidencePieceSeven;
+    public TestEvidencePiece evidencePieceEight;
 
     private int index = 0;
 
@@ -26,6 +28,8 @@ public class EvidenceWatcher : MonoBehaviour
         Pieces.Add(evidencePieceFour);
         Pieces.Add(evidencePieceFive);
         Pieces.Add(evidencePieceSix);
+        Pieces.Add(evidencePieceSeven);
+        Pieces.Add(evidencePieceEight);
     }
 
     // Update is called once per frame
