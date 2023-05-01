@@ -77,13 +77,13 @@ public class GameManager : MonoBehaviour
         postDateText.text = "Date: " + pMonth + "/" + pDays.ToString() + "/1812";
         if (days > finalDay) {
             DeadlineMissed();
-            days = 1;
+            days = days % 30;
             month = month + 1;
         }
         if (groundshake) {
             if (pDays > pFinalDay) {
                 PostDeadlineMissed();
-                pDays = 1;
+                pDays = pDays % 31;
                 pMonth = pMonth + 1;
             }
         }
@@ -106,10 +106,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void ResetScene() {
+        groundshake = false;
         RemoveAllEvidence();
         RemoveAllUsedEvidence();
-        days = 1;
+        days = 20;
         month = 9;
+        pDays = 20;
+        pMonth = 5;
     }
 
     public void DialogShow(string text) {

@@ -4642,7 +4642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa30ad1e98294bf89ee59f03cd152c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earthquakeSound: {fileID: 0}
+  birdsong: {fileID: 8300000, guid: bce35894222144b1183940069f78d29a, type: 3}
+  earthquakeSound: {fileID: 8300000, guid: a7cebc87fe5c2485f8ea8449fdd1397e, type: 3}
   shakeDuration: 5
   shakeMagnitude: 0.1
   preTilemap: {fileID: 974554867}
