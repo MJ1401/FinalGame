@@ -250,7 +250,7 @@ public class GameManager : MonoBehaviour
             UI.SetActive(false);
             testNotebook.SetActive(false);
             PostUI.SetActive(false);
-            Title.SetActive(true);
+            Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
