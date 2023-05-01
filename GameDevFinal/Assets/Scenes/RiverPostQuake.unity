@@ -5517,11 +5517,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Evi4
+  test_evidence: River flowed backwards
+  test_evidence_summary: The earthquake caused the river to temporarily flow backwards
   test_collected: 0
-  score: 0
+  score: 25
 --- !u!1 &1386204229
 GameObject:
   m_ObjectHideFlags: 0
@@ -25437,11 +25437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Evi7
+  test_evidence: Man saves family from the river
+  test_evidence_summary: A man claims to have saved a family of four from the currents
   test_collected: 0
-  score: 0
+  score: -25
 --- !u!1 &1578737413
 GameObject:
   m_ObjectHideFlags: 0
@@ -32737,7 +32737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: We truly feared for our lives...
+  text: I can scarcely believe what I have seen. The river flowed backwards, I swear
+    to you!
 --- !u!1 &1938495499
 GameObject:
   m_ObjectHideFlags: 0
@@ -33824,7 +33825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: We were lucky to make it out in one piece, unlike our poor boat...
+  text: I have never witnessed anything like that before. The sheer power of the
+    currents...
 --- !u!61 &2072108693
 BoxCollider2D:
   m_ObjectHideFlags: 0

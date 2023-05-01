@@ -26702,11 +26702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Evi6
+  test_evidence: First steamboat sailed Mississippi River
+  test_evidence_summary: The first steamboat was sailed on the Mississippi River
   test_collected: 0
-  score: 0
+  score: 25
 --- !u!1 &1519290433
 GameObject:
   m_ObjectHideFlags: 0
@@ -26835,11 +26835,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Evi8
+  test_evidence: Man claims to sail entire river in one day
+  test_evidence_summary: A man claims to have sailed the entire Mississippi River
+    in a single day
   test_collected: 0
-  score: 0
+  score: -25
 --- !u!1 &1529002001
 GameObject:
   m_ObjectHideFlags: 0
@@ -26887,7 +26888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: I love my husband, but he's a madman if he thinks I'm ever getting on a boat.
+  text: I love my husband, but he's a fool if he thinks anyone would believe that...
 --- !u!61 &1529002004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32090,8 +32091,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - One day I hope to sail up the entire river! One day...
-  - If only it flowed up instead of down...
+  - I sailed the entire Mississippi River in one day!
+  - I did it all on my own!
+  - My very lovely wife does not believe me, though...
   evidence_name: Evi8
   testEvi: {fileID: 1523640717}
 --- !u!61 &1824936333
