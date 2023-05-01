@@ -20,7 +20,7 @@ public class Journal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void openingJournal()

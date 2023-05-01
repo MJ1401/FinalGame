@@ -45,11 +45,24 @@ public class GameManager : MonoBehaviour
 
     private bool groundshake = false;
 
+    //GABBY TEST AREA
+    private TestEvidence testPieceOne;
+    private TestEvidence testPieceTwo;
+    private TestEvidence testPieceThree;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        testPieceOne.setEvidenceName("Houses are on fire");
+        testPieceOne.setEvidence("There are houses burning everywhere! Soon there may be nothing left!");
+        testPieceOne.setSummary("There are houses burning");
+        testPieceOne.setCollected(false);
 
+        testPieceOne.setEvidenceName("Churches are on fire");
+        testPieceOne.setEvidence("There are churches burning everywhere! Soon there may be nothing left!");
+        testPieceOne.setSummary("There are churches burning");
+        testPieceOne.setCollected(false);
     }
 
     // Update is called once per frame
