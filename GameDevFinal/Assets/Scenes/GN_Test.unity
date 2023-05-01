@@ -62801,9 +62801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - Some people are talking about an ending to the world.
-  - A type of biblical terror.
-  - Massive destruction that wipes out 1/3 of the people.
+  - Have you seen the river people yet?
+  - They come out from the depths of the river at night.
+  - I am standing watch. Leave me be.
   evidence_name: Evi7
   testEvi: {fileID: 0}
 --- !u!61 &632093519
