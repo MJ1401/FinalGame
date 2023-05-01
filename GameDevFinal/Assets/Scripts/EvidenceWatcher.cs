@@ -6,17 +6,37 @@ public class EvidenceWatcher : MonoBehaviour
 {
 
     public GameObject[] evidence;
+    private List<TestEvidencePiece> Pieces = new List<TestEvidencePiece>();
+
+    public TestEvidencePiece evidencePieceOne;
+    public TestEvidencePiece evidencePieceTwo;
+    public TestEvidencePiece evidencePieceThree;
+    public TestEvidencePiece evidencePieceFour;
+    public TestEvidencePiece evidencePieceFive;
+    public TestEvidencePiece evidencePieceSix;
+    public TestEvidencePiece evidencePieceSeven;
+    public TestEvidencePiece evidencePieceEight;
+
+    private int index = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Pieces.Add(evidencePieceOne);
+        Pieces.Add(evidencePieceTwo);
+        Pieces.Add(evidencePieceThree);
+        Pieces.Add(evidencePieceFour);
+        Pieces.Add(evidencePieceFive);
+        Pieces.Add(evidencePieceSix);
+        Pieces.Add(evidencePieceSeven);
+        Pieces.Add(evidencePieceEight);
     }
 
     // Update is called once per frame
     void Update()
     {
-        ShowEvidence();
+        //ShowEvidence();
+        TestShowEvidence();
     }
 
     public void ShowEvidence() {
@@ -27,5 +47,16 @@ public class EvidenceWatcher : MonoBehaviour
                 evi.SetActive(false);
             }
         }
+    }
+
+    public void TestShowEvidence(){
+        foreach (var item in GameManager.TestEvidenceList)
+        {
+            Pieces[index].eviSummary.text = item.test_evidence_summary;
+            Pieces[index].eviFullText.text = item.test_evidence;
+            Pieces[index].eviPaper.SetActive(true);
+            index +=1;
+        }
+        
     }
 }
