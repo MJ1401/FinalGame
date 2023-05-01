@@ -88,8 +88,17 @@ public class testJournal : MonoBehaviour
                 boxIndex = boxIndex + 1;
             }
             // item.test_collected = true;
-            } 
+        }
                
+    }
+
+    public void ResetJournal(){
+        foreach (var item in journalBoxes)
+        {
+            item.text = "";
+        }
+        boxIndex = 0;
+        pageIndex = 0;
     }
 
     public void testFlipRightPage(int pageNum){

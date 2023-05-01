@@ -106,6 +106,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void ResetScene() {
+        //GABBY UPDATE
+        TestEvidenceList.Clear();
+        //
         groundshake = false;
         RemoveAllEvidence();
         RemoveAllUsedEvidence();
@@ -268,6 +271,7 @@ public class GameManager : MonoBehaviour
             BossUI.SetActive(false);
         }
         else if (scene == "PostQuake") {
+            GameManager.TestEvidenceList.Clear();
             print("New scene..");
             groundshake = true;
             dialogBox.SetActive(false);
