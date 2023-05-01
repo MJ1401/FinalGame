@@ -23613,11 +23613,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Volcano
+  test_evidence: A volcano erupted and caused all of the ground to shake. No one
+    has seen this volcano and no evidence of lava has been discovered.
+  test_evidence_summary: Volcanic Eruption
   test_collected: 0
-  score: 0
+  score: 25
 --- !u!1 &624359841
 GameObject:
   m_ObjectHideFlags: 0
@@ -23707,11 +23708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Arch
+  test_evidence: Someone is planning to build an arch in St. Louis. This seems really
+    impracticle.
+  test_evidence_summary: Building Arch
   test_collected: 0
-  score: 0
+  score: -25
 --- !u!1 &746134562
 GameObject:
   m_ObjectHideFlags: 0
@@ -23949,11 +23951,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test_evidence_name: 
-  test_evidence: 
-  test_evidence_summary: 
+  test_evidence_name: Tecumsah
+  test_evidence: 'Tecumsah predicted a natural disaster would happen and it did!
+    His prophecy actually came true. '
+  test_evidence_summary: Tecumsah predicted earthquakes
   test_collected: 0
-  score: 0
+  score: 25
 --- !u!1 &909544784
 GameObject:
   m_ObjectHideFlags: 0
@@ -31085,8 +31088,9 @@ MonoBehaviour:
   text:
   - 'You again! '
   - 'I have heard many stories... '
-  - 'I suggest you return down where I sent you last time...  '
-  - 'Maybe you can lay some rumors to rest. '
+  - Someone says they want to build a giant arch.
+  - I don't know why we would build an arch.
+  - It is really impractical.
   evidence_name: Evi3
   testEvi: {fileID: 688633781}
 --- !u!114 &1866578264

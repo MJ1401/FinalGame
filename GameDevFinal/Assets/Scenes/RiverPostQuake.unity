@@ -5518,8 +5518,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test_evidence_name: Evi4
-  test_evidence: River flowed backwards
-  test_evidence_summary: The earthquake caused the river to temporarily flow backwards
+  test_evidence: The earthquakes caused the river to flow backwards for a bit. While
+    this seems crazy, multiple people have supported the claim. There is even proof
+    of boat crashes traveling South to North.
+  test_evidence_summary: River flowing backwards.
   test_collected: 0
   score: 25
 --- !u!1 &1386204229
@@ -25438,8 +25440,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test_evidence_name: Evi7
-  test_evidence: Man saves family from the river
-  test_evidence_summary: A man claims to have saved a family of four from the currents
+  test_evidence: 'Man saves family from the river, but the family does not exist
+    for further questioning. This is the same guy who claimed he could travel UP
+    the Mississippi River in a day. '
+  test_evidence_summary: Man claims he saves family
   test_collected: 0
   score: -25
 --- !u!1 &1578737413

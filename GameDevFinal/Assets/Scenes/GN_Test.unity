@@ -83746,7 +83746,7 @@ MonoBehaviour:
     folks might disagree with me on that.
   test_evidence_summary: Joining the United States
   test_collected: 0
-  score: 20
+  score: 25
 --- !u!1 &2139678079
 GameObject:
   m_ObjectHideFlags: 0
