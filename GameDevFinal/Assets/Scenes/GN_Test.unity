@@ -61111,6 +61111,7 @@ MonoBehaviour:
   PostQuakeInves: {fileID: 1148850058}
   Credits: {fileID: 486926348}
   UI: {fileID: 0}
+  testNotebook: {fileID: 0}
   BossUI: {fileID: 0}
   PostUI: {fileID: 0}
   totalText: {fileID: 1660815581}
@@ -62799,12 +62800,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - Some people are talking about an ending to the world.
-  - A type of biblical terror.
-  - Massive destruction that wipes out 1/3 of the people.
+  - Have you seen the river people yet?
+  - They come out from the depths of the river at night.
+  - I am standing watch. Leave me be.
   evidence_name: Evi7
   testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
 --- !u!61 &632093519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69062,7 +69062,6 @@ MonoBehaviour:
   - Some people do not want that.
   evidence_name: Evi1
   testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
 --- !u!61 &1096000120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76273,7 +76272,6 @@ MonoBehaviour:
   - Sometimes I feel the ground rumble from the creature's steps.
   evidence_name: Evi4
   testEvi: {fileID: 103356774}
-  testJournal: {fileID: 0}
 --- !u!114 &1657408942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79943,7 +79941,6 @@ MonoBehaviour:
     of ice had broken.
   evidence_name: informationTwo
   testEvi: {fileID: 0}
-  testJournal: {fileID: 0}
 --- !u!61 &1980269671
 BoxCollider2D:
   m_ObjectHideFlags: 0
