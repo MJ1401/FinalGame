@@ -24,6 +24,7 @@ public class testJournal : MonoBehaviour
     public GameObject PageOne;
     public GameObject PageTwo;
     public GameObject PageThree;
+    public GameObject PageFour;
     private List<GameObject> Pages = new List<GameObject>();
     public GameObject userInterface;
     public GameObject openedNotebook;
@@ -48,6 +49,7 @@ public class testJournal : MonoBehaviour
         Pages.Add(PageOne);
         Pages.Add(PageTwo);
         Pages.Add(PageThree);
+        Pages.Add(PageFour);
         print(pageIndex);
         
     }
