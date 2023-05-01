@@ -261,6 +261,7 @@ public class GameManager : MonoBehaviour
             BossUI.SetActive(false);
         }
         else if (scene == "PostQuake") {
+            print("New scene..");
             groundshake = true;
             dialogBox.SetActive(false);
             UI.SetActive(false);

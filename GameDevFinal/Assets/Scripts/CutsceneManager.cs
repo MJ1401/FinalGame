@@ -34,7 +34,7 @@ public class CutsceneManager : MonoBehaviour {
         yield return new WaitForSeconds(2);
 
         // Load the next scene
-        SceneManager.LoadScene(nextSceneName);
+        GameManager.Instance.ChangeScene(nextSceneName);
     }
 
     private IEnumerator CameraShake(){
