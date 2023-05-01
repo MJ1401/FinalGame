@@ -250,14 +250,14 @@ public class GameManager : MonoBehaviour
             UI.SetActive(false);
             testNotebook.SetActive(false);
             PostUI.SetActive(false);
-            Title.SetActive(true);
+            Title.SetActive(false);
             InvesArea.SetActive(false);
             PostQuakeInves.SetActive(false);
             Credits.SetActive(false);
             BossUI.SetActive(false);
         }
         else if (scene == "PostQuake") {
-            groundshake = true;
+            // groundshake = true;
             dialogBox.SetActive(false);
             UI.SetActive(false);
             testNotebook.SetActive(false);
