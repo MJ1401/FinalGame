@@ -24414,7 +24414,7 @@ MonoBehaviour:
   - Talk around the town is this conflict up north is non-sense...
   - Maybe we can all just get along
   evidence_name: Evi2
-  testEvi: {fileID: 0}
+  testEvi: {fileID: 1463703164}
 --- !u!61 &1033061326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24715,6 +24715,7 @@ MonoBehaviour:
   test_evidence: 
   test_evidence_summary: 
   test_collected: 0
+  score: 0
 --- !u!1 &1267396282
 GameObject:
   m_ObjectHideFlags: 0
@@ -27668,6 +27669,7 @@ MonoBehaviour:
   test_evidence: 
   test_evidence_summary: 
   test_collected: 0
+  score: 0
 --- !u!1 &1483225424
 GameObject:
   m_ObjectHideFlags: 0
@@ -28188,6 +28190,7 @@ MonoBehaviour:
   test_evidence: 
   test_evidence_summary: 
   test_collected: 0
+  score: 0
 --- !u!1 &1613148982
 GameObject:
   m_ObjectHideFlags: 0
@@ -30454,7 +30457,7 @@ MonoBehaviour:
   - Says he's gonna stomp down all our houses!
   - Man that guy is crazy...
   evidence_name: Evi5
-  testEvi: {fileID: 0}
+  testEvi: {fileID: 1603756445}
 --- !u!61 &1754727271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31084,7 +31087,7 @@ MonoBehaviour:
   - I believe there's a difference of opinion out here...
   - I suggest you venture out to get some REAL opinions.
   evidence_name: Evi3
-  testEvi: {fileID: 0}
+  testEvi: {fileID: 1231334004}
 --- !u!114 &1866578264
 MonoBehaviour:
   m_ObjectHideFlags: 0

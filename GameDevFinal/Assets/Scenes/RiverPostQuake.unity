@@ -308,6 +308,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2118709037}
+  - {fileID: 1470871000}
   m_Father: {fileID: 996315365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -326,7 +327,7 @@ MonoBehaviour:
   text:
   - '[False evidence to be added by Justin]'
   evidence_name: Evi7
-  testEvi: {fileID: 0}
+  testEvi: {fileID: 1470871001}
 --- !u!61 &458145197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5247,6 +5248,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 835984152}
+  - {fileID: 1300478144}
   m_Father: {fileID: 996315365}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5268,7 +5270,7 @@ MonoBehaviour:
   - It carried us up-stream for over a mile!
   - Then the wave settled and slowly the river went right again...
   evidence_name: Evi4
-  testEvi: {fileID: 0}
+  testEvi: {fileID: 1300478145}
 --- !u!61 &1146369780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5466,6 +5468,55 @@ Transform:
   m_Father: {fileID: 847764440}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1300478143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300478144}
+  - component: {fileID: 1300478145}
+  m_Layer: 0
+  m_Name: Evidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1300478144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300478143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1146369778}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1300478145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300478143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: 
+  test_evidence: 
+  test_evidence_summary: 
+  test_collected: 0
+  score: 0
 --- !u!1 &1386204229
 GameObject:
   m_ObjectHideFlags: 0
@@ -25337,6 +25388,55 @@ Transform:
   m_Father: {fileID: 847764440}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1470870999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470871000}
+  - component: {fileID: 1470871001}
+  m_Layer: 0
+  m_Name: Evidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470871000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470870999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 458145195}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1470871001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470870999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: 
+  test_evidence: 
+  test_evidence_summary: 
+  test_collected: 0
+  score: 0
 --- !u!1 &1578737413
 GameObject:
   m_ObjectHideFlags: 0
