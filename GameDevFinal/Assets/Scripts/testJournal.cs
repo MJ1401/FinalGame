@@ -56,6 +56,7 @@ public class testJournal : MonoBehaviour
         bookOpenSound.Play();
         userInterface.SetActive(false);
         openedNotebook.SetActive(true);
+        testAddToJournal(GameManager.TestEvidenceList);
         //PageOne.SetActive(true);
     }
 
@@ -66,14 +67,18 @@ public class testJournal : MonoBehaviour
         openedNotebook.SetActive(false);
     }
 
-    public void testAddToJournal(TestEvidence testevi){
-        if(!testevi.test_collected){
-            journalBoxes[boxIndex].text = testevi.test_evidence;
+    public void testAddToJournal(List<TestEvidence> evidenceList){
+        boxIndex = 0;
+        foreach (var item in evidenceList)
+        {
+            // if(!item.test_collected){
+            journalBoxes[boxIndex].text = item.test_evidence;
             if(boxIndex +1 < journalBoxes.Count){
                 boxIndex = boxIndex + 1;
             }
-        testevi.test_collected = true;
-        }
+            // item.test_collected = true;
+            } 
+               
     }
 
     public void testFlipRightPage(int pageNum){

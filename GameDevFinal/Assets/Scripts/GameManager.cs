@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI daysLeft;
     public TextMeshProUGUI postDateText;
     public TextMeshProUGUI postDaysLeft;
+    public static List<TestEvidence> TestEvidenceList = new List<TestEvidence>();
     private static int days = 20;
     private static int month = 9;
     private static int pDays = 20;
@@ -45,11 +46,6 @@ public class GameManager : MonoBehaviour
     public GameObject postFailureScreen;
 
     private bool groundshake = false;
-
-    //GABBY TEST AREA
-    // private TestEvidence testPieceOne;
-    // private TestEvidence testPieceTwo;
-    // private TestEvidence testPieceThree;
 
 
     // Start is called before the first frame update
@@ -91,6 +87,14 @@ public class GameManager : MonoBehaviour
                 pMonth = pMonth + 1;
             }
         }
+    }
+
+    public void GmCollectEvidence(TestEvidence testevi){
+        if(!testevi.test_collected){
+            testevi.setCollected(true);
+            TestEvidenceList.Add(testevi);
+        }
+        
     }
 
     public void DeadlineMissed() {

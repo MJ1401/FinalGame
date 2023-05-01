@@ -135,6 +135,7 @@ public class EForInteract : MonoBehaviour {
         // set text to something like "can I help you? and can repeat"
         // scribble.Play();
         GameManager.AddEvidence(evidence_name);
+        GameManager.Instance.GmCollectEvidence(testEvi);
         print("Evidence collected");
         //Journal.addToJournal(evidence_name);
         //testJournal.Instance.testAddToJournal(testEvi); 
