@@ -23628,6 +23628,7 @@ GameObject:
   - component: {fileID: 746134563}
   - component: {fileID: 746134567}
   - component: {fileID: 746134568}
+  - component: {fileID: 746134569}
   m_Layer: 0
   m_Name: Female Townsperson
   m_TagString: Untagged
@@ -23780,6 +23781,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &746134569
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746134562}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &909544784
 GameObject:
   m_ObjectHideFlags: 0
@@ -24362,6 +24389,7 @@ GameObject:
   - component: {fileID: 1033061325}
   - component: {fileID: 1033061329}
   - component: {fileID: 1033061330}
+  - component: {fileID: 1033061331}
   m_Layer: 0
   m_Name: Priest
   m_TagString: Untagged
@@ -24386,6 +24414,7 @@ MonoBehaviour:
   - Talk around the town is this conflict up north is non-sense...
   - Maybe we can all just get along
   evidence_name: Evi2
+  testEvi: {fileID: 0}
 --- !u!61 &1033061326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24477,6 +24506,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1007355340}
+  - {fileID: 1463703163}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24521,6 +24551,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1033061331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033061324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1143969263
 GameObject:
   m_ObjectHideFlags: 0
@@ -24611,6 +24667,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0
+--- !u!1 &1231334002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1231334003}
+  - component: {fileID: 1231334004}
+  m_Layer: 0
+  m_Name: Evidence (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1231334003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231334002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.383998, y: -1.4382787, z: 0.6386393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1866578262}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231334004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231334002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: 
+  test_evidence: 
+  test_evidence_summary: 
+  test_collected: 0
 --- !u!1 &1267396282
 GameObject:
   m_ObjectHideFlags: 0
@@ -27502,6 +27606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: []
   evidence_name: 
+  testEvi: {fileID: 0}
 --- !u!114 &1458061328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27515,6 +27620,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: 
+--- !u!1 &1463703162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463703163}
+  - component: {fileID: 1463703164}
+  m_Layer: 0
+  m_Name: Evidence (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463703163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463703162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.456001, y: -2.6282787, z: 0.6386393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1033061328}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463703164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463703162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: 
+  test_evidence: 
+  test_evidence_summary: 
+  test_collected: 0
 --- !u!1 &1483225424
 GameObject:
   m_ObjectHideFlags: 0
@@ -27987,6 +28140,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1603756443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603756444}
+  - component: {fileID: 1603756445}
+  m_Layer: 0
+  m_Name: Evidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603756444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603756443}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.056002, y: 9.451721, z: 0.6386393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1754727269}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603756445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603756443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c94bcc8e9438ce468ed29530bb7f924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_evidence_name: 
+  test_evidence: 
+  test_evidence_summary: 
+  test_collected: 0
 --- !u!1 &1613148982
 GameObject:
   m_ObjectHideFlags: 0
@@ -30158,6 +30359,7 @@ GameObject:
   - component: {fileID: 1754727271}
   - component: {fileID: 1754727273}
   - component: {fileID: 1754727272}
+  - component: {fileID: 1754727274}
   m_Layer: 0
   m_Name: Farmer Man
   m_TagString: Untagged
@@ -30230,6 +30432,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1858503905}
+  - {fileID: 1603756444}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30251,6 +30454,7 @@ MonoBehaviour:
   - Says he's gonna stomp down all our houses!
   - Man that guy is crazy...
   evidence_name: Evi5
+  testEvi: {fileID: 0}
 --- !u!61 &1754727271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30318,6 +30522,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1754727274
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754727267}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1760869906
 GameObject:
   m_ObjectHideFlags: 0
@@ -30332,6 +30562,7 @@ GameObject:
   - component: {fileID: 1760869907}
   - component: {fileID: 1760869911}
   - component: {fileID: 1760869912}
+  - component: {fileID: 1760869913}
   m_Layer: 0
   m_Name: Male Townsperson
   m_TagString: Untagged
@@ -30486,6 +30717,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1760869913
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760869906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1793634979
 GameObject:
   m_ObjectHideFlags: 0
@@ -30706,6 +30963,7 @@ GameObject:
   - component: {fileID: 1866578263}
   - component: {fileID: 1866578264}
   - component: {fileID: 1866578265}
+  - component: {fileID: 1866578266}
   m_Layer: 0
   m_Name: NA Woman
   m_TagString: Untagged
@@ -30804,6 +31062,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1793634980}
+  - {fileID: 1231334003}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30825,6 +31084,7 @@ MonoBehaviour:
   - I believe there's a difference of opinion out here...
   - I suggest you venture out to get some REAL opinions.
   evidence_name: Evi3
+  testEvi: {fileID: 0}
 --- !u!114 &1866578264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30864,6 +31124,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!61 &1866578266
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866578258}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1871178825
 GameObject:
   m_ObjectHideFlags: 0
@@ -31011,11 +31297,17 @@ MonoBehaviour:
   PostQuakeInves: {fileID: 0}
   Credits: {fileID: 0}
   UI: {fileID: 0}
+  testNotebook: {fileID: 0}
   BossUI: {fileID: 0}
   PostUI: {fileID: 0}
   totalText: {fileID: 0}
+  secondTotal: {fileID: 0}
   dateText: {fileID: 0}
+  daysLeft: {fileID: 0}
+  postDateText: {fileID: 0}
+  postDaysLeft: {fileID: 0}
   failureScreen: {fileID: 0}
+  postFailureScreen: {fileID: 0}
 --- !u!4 &1887962535
 Transform:
   m_ObjectHideFlags: 0
