@@ -30,10 +30,16 @@ public class testJournal : MonoBehaviour
     public GameObject openedNotebook;
     public AudioSource bookOpenSound;
     public AudioSource bookCloseSound;
+    private bool firstOpen = false; 
 
     // Start is called before the first frame update
-    void Start()
+    void Start(){
+        MakePages();
+    }
+    void MakePages()
     {
+        if(!firstOpen){
+        print("Making Journal!");
         boxIndex = 0;
         pageIndex = 0;
         journalBoxes.Add(journalBoxOne);
@@ -45,19 +51,19 @@ public class testJournal : MonoBehaviour
         journalBoxes.Add(journalBoxSeven);
         journalBoxes.Add(journalBoxEight);
 
-        print(pageIndex);
         Pages.Add(PageOne);
         Pages.Add(PageTwo);
         Pages.Add(PageThree);
         Pages.Add(PageFour);
-        print(pageIndex);
-        
+        firstOpen = true;
+        }
     }
     public void openingJournal()
     {
-        bookOpenSound.Play();
+        MakePages();
         userInterface.SetActive(false);
         openedNotebook.SetActive(true);
+        bookOpenSound.Play();
         testAddToJournal(GameManager.TestEvidenceList);
         //PageOne.SetActive(true);
     }
@@ -71,8 +77,11 @@ public class testJournal : MonoBehaviour
 
     public void testAddToJournal(List<TestEvidence> evidenceList){
         boxIndex = 0;
+        print("Boxes" + journalBoxes.Count);
         foreach (var item in evidenceList)
         {
+            print(boxIndex);
+            print(item.test_evidence);
             // if(!item.test_collected){
             journalBoxes[boxIndex].text = item.test_evidence;
             if(boxIndex +1 < journalBoxes.Count){
