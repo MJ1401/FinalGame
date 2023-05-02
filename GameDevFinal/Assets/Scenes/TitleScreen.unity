@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi4
-  score: -25
+  score: 25
 --- !u!61 &84477806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8971,7 +8971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi3
-  score: 25
+  score: -25
 --- !u!61 &476805463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10219,7 +10219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi1
-  score: 25
+  score: -25
 --- !u!61 &551045655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11107,7 +11107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi2
-  score: 2
+  score: 25
 --- !u!61 &596060992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12437,7 +12437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi2
-  score: 5
+  score: 25
 --- !u!61 &643069260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12965,7 +12965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi1
-  score: 1
+  score: -25
 --- !u!61 &684898645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14666,7 +14666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi6
-  score: 25
+  score: -25
 --- !u!61 &728979375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21433,7 +21433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi3
-  score: 3
+  score: 25
 --- !u!61 &1090934440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22033,7 +22033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi8
-  score: -20
+  score: 25
 --- !u!61 &1125748331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23700,7 +23700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi4
-  score: 4
+  score: -25
 --- !u!61 &1220528351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29501,7 +29501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi7
-  score: 7
+  score: -25
 --- !u!61 &1477865944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35282,7 +35282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi8
-  score: 8
+  score: 25
 --- !u!61 &1787315905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38911,7 +38911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi6
-  score: 6
+  score: 25
 --- !u!61 &2009499881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39320,7 +39320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: Evi5
-  score: 5
+  score: -25
 --- !u!61 &2025020551
 BoxCollider2D:
   m_ObjectHideFlags: 0
