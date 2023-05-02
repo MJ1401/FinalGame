@@ -17,6 +17,8 @@ public class Highlight : MonoBehaviour
     public string evidence;
     public int score;
 
+    // private int s;
+
     void Awake()
     {
         sprite = GetComponent<Image>();
@@ -39,6 +41,8 @@ public class Highlight : MonoBehaviour
         } else {
             target = new Color(0f, 1f, 0f, 0.3f);
             wasClicked = true;
+            //s = TestEvidence.score;
+            // print(s);
             GameManager.AddUsedEvidence(evidence, score);
             //GameManager.ScoreUpdate();
         }

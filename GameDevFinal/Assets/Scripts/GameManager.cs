@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public static Dictionary<string, int> used_evidence = new Dictionary<string, int>();
 
+    public static List<int> score_keeper = new List<int>();
+
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
@@ -97,6 +99,10 @@ public class GameManager : MonoBehaviour
                 pMonth = pMonth + 1;
             }
         }
+    }
+
+    public void AdddScoreKeeper(int n) {
+        score_keeper.Add(n);
     }
 
     public void GmCollectEvidence(TestEvidence testevi){
