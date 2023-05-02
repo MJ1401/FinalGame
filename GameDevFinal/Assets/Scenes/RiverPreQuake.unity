@@ -27257,7 +27257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: I love my husband, but he's a fool if he thinks anyone would believe that...
+  text: I love my husband, but he's a fool if he thinks anyone would believe that
+    nonsense...
 --- !u!61 &1529002004
 BoxCollider2D:
   m_ObjectHideFlags: 0

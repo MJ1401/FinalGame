@@ -248,27 +248,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - To advance through dialog in game, press 'e' like you just did.
+  - To advance through dialog in game, press "E" like you just did.
   - You are very good at this!
   - 'Who am I? '
-  - 'I am your News Paper Editor for the St. Louis Newspaper. '
+  - 'I am the newspaper editor for the St. Louis Newspaper. '
   - You work for me and create articles.
-  - Gather information by traveling to different locations,
+  - Gather information by traveling to different locations.
   - Then talk to townspeople to collect evidence.
-  - Important people will have an exclamation above them.
-  - You must press "e" to talk to those people.
-  - The information will appear in your jounral and your home base.
+  - Important people will have an exclamation point above them.
+  - You must press "E" to talk to those people.
+  - The information will appear in your journal and your home base.
   - Turn truthful evidence green.
   - Leave false information red.
   - When you are finished, press the "Submit" button.
-  - 'Do not choose untruthful pieces of information.  '
+  - Do not choose untruthful pieces of information!
   - Our citizens only want the truth!
-  - Submitting false information will get you a lower score.
+  - Submitting false information will have consequences.
   - Complete your article on time or else you will be fired!
   - Remember, travel times vary between locations.
   - 'Use your time wisely. '
   - 'Good luck! I believe in you. '
-  - Press the start button to continue or press 'e' to repeat.
+  - Press the "Start" button to continue or press "E" to repeat.
   evidence_name: 
   scribble: {fileID: 0}
 --- !u!1 &201124973
