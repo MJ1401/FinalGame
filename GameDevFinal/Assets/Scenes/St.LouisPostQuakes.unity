@@ -23854,7 +23854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test_evidence_name: Arch
   test_evidence: Someone is planning to build an arch in St. Louis. This seems really
-    impracticle.
+    impractical.
   test_evidence_summary: Building Arch
   test_collected: 0
   score: -25
@@ -31792,6 +31792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68e64f3c2605b945880b03adb3b159d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prequakeWatcher: {fileID: 0}
+  postquakeWatcher: {fileID: 0}
   dialogBox: {fileID: 1837659862}
   dialogText: {fileID: 178675619}
   Title: {fileID: 0}
