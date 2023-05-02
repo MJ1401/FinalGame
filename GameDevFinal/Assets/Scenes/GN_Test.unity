@@ -63315,7 +63315,7 @@ MonoBehaviour:
   text:
   - Have you seen the river people yet?
   - They come out from the depths of the river at night.
-  - I am standing watch. Leave me be.
+  - I am standing watch. Leave me be...
   evidence_name: Evi7
   testEvi: {fileID: 170264695}
 --- !u!61 &632093519
@@ -77229,7 +77229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657408936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.54, y: 5.487932, z: 10.058978}
+  m_LocalPosition: {x: 2.3, y: 5.487932, z: 10.058978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77277,13 +77277,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - There are some magical creatures in the woods around here.
+  - There are some magical creatures in the woods around here...
   - I saw it with my own eyes.
-  - My husband calls me crazy and says it was just a wild dog.
-  - It had HUGE teeth.
+  - My husband calls me crazy but I saw it!
+  - It had huge teeth!
   - It had wings and would fly.
   - I am the only person who has seen it.
-  - Sometimes I feel the ground rumble from the creature's steps.
+  - Sometimes I feel the ground rumble from the creature's steps...
   evidence_name: Evi4
   testEvi: {fileID: 103356774}
 --- !u!114 &1657408942
@@ -78753,7 +78753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742125192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 5.28, z: 10.058978}
+  m_LocalPosition: {x: 3.75, y: 6.56, z: 10.058978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78772,7 +78772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1649cf12d6a4487896d6a248afeac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: My wife is Crazy!
+  text: My wife is crazy!
 --- !u!61 &1742125195
 BoxCollider2D:
   m_ObjectHideFlags: 0
