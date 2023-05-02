@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance {get; private set;}
 
+    public EvidenceWatcher prequakeWatcher;
+    public EvidenceWatcher postquakeWatcher;
     public static Dictionary<string, bool> evidence = new Dictionary<string, bool>();
 
     public static Dictionary<string, int> used_evidence = new Dictionary<string, int>();
@@ -279,7 +281,7 @@ public class GameManager : MonoBehaviour
             BossUI.SetActive(false);
         }
         else if (scene == "PostQuake") {
-            GameManager.TestEvidenceList.Clear();
+            //GameManager.TestEvidenceList.Clear();
             print("New scene..");
             groundshake = true;
             dialogBox.SetActive(false);

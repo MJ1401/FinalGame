@@ -39,10 +39,11 @@ public class EvidenceWatcher : MonoBehaviour
     void Update()
     {
         //ShowEvidence();
-        //TestShowEvidence();
+        TestShowEvidence();
     }
 
     public void ShowEvidence() {
+        
         foreach (var evi in evidence) {
             if (GameManager.evidence.ContainsKey(evi.name)) { // Learned from https://code-maze.com/csharp-detect-dictionary-key-exists/
                 evi.SetActive(true);
@@ -53,6 +54,7 @@ public class EvidenceWatcher : MonoBehaviour
     }
 
     public void TestShowEvidence(){
+        print("testShowEvidence" + GameManager.TestEvidenceList);
         index = 0;
         foreach (var item in GameManager.TestEvidenceList)
         {   
