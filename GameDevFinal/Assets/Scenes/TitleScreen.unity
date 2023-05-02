@@ -25592,7 +25592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome to "Ground Truth!" (Press 'e' to Continue)
+  m_text: Welcome to "Ground Truth!" (Press "E" to Continue)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e78507b33528631479bfe0791d1243dc, type: 2}
   m_sharedMaterial: {fileID: -8471346487640913136, guid: e78507b33528631479bfe0791d1243dc, type: 2}
