@@ -54,7 +54,7 @@ public class EvidenceWatcher : MonoBehaviour
     }
 
     public void TestShowEvidence(){
-        print("testShowEvidence" + GameManager.TestEvidenceList);
+        //print("testShowEvidence" + GameManager.TestEvidenceList);
         index = 0;
         foreach (var item in GameManager.TestEvidenceList)
         {   
