@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         if (groundshake) {
             if (pDays > pFinalDay) {
                 PostDeadlineMissed();
-                pDays = pDays % 31;
+                pDays = pDays % 30;
                 pMonth = pMonth + 1;
             }
         }
