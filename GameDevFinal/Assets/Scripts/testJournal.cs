@@ -95,7 +95,7 @@ public class testJournal : MonoBehaviour
     public void ResetJournal(){
         foreach (var item in journalBoxes)
         {
-            item.text = "";
+            item.text = " ";
         }
         boxIndex = 0;
         pageIndex = 0;
