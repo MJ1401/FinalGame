@@ -5082,6 +5082,7 @@ GameObject:
   - component: {fileID: 298588402}
   - component: {fileID: 298588401}
   - component: {fileID: 298588404}
+  - component: {fileID: 298588405}
   m_Layer: 0
   m_Name: Farmer's wife
   m_TagString: Untagged
@@ -5241,6 +5242,32 @@ MonoBehaviour:
   - Now they do not have a place to live.
   evidence_name: Evi6
   testEvi: {fileID: 594435849}
+--- !u!61 &298588405
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298588398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &454353339
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,6 +5282,7 @@ GameObject:
   - component: {fileID: 454353343}
   - component: {fileID: 454353342}
   - component: {fileID: 454353345}
+  - component: {fileID: 454353346}
   m_Layer: 0
   m_Name: Male Townsperson 1
   m_TagString: Untagged
@@ -5415,6 +5443,32 @@ MonoBehaviour:
   - But they still make me nervous.
   evidence_name: Evi 1
   testEvi: {fileID: 829711922}
+--- !u!61 &454353346
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454353339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &492254042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5964,6 +6018,7 @@ GameObject:
   - component: {fileID: 967889320}
   - component: {fileID: 967889319}
   - component: {fileID: 967889322}
+  - component: {fileID: 967889323}
   m_Layer: 0
   m_Name: Female Townsperson 1
   m_TagString: Untagged
@@ -6116,6 +6171,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: My house burned down!!!!!
+--- !u!61 &967889323
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967889316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &977688832
 GameObject:
   m_ObjectHideFlags: 0
@@ -58538,6 +58619,7 @@ GameObject:
   - component: {fileID: 1627804154}
   - component: {fileID: 1627804153}
   - component: {fileID: 1627804156}
+  - component: {fileID: 1627804157}
   m_Layer: 0
   m_Name: Male Farmer 1
   m_TagString: Untagged
@@ -58698,6 +58780,32 @@ MonoBehaviour:
   - It's steps cause the ground to shake
   evidence_name: Evi8
   testEvi: {fileID: 845026966}
+--- !u!61 &1627804157
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627804150}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1628477761
 GameObject:
   m_ObjectHideFlags: 0
