@@ -71,9 +71,17 @@ public class GameManager : MonoBehaviour
         }
         totalText.text = "Score: " + total.ToString();
         secondTotal.text = "Score: " + total.ToString();
-        daysLeft.text = "Days Left: " + (finalDay - days).ToString();
+        if (finalDay - days < 16) {
+            daysLeft.text = "Days Left: " + (finalDay - days).ToString();
+        } else {
+            daysLeft.text = "Days Left: 0";
+        }
         dateText.text = "Date: " + month + "/" + days.ToString() + "/1811";
-        postDaysLeft.text = "Days Left: " + (pFinalDay - pDays).ToString();
+        if (pFinalDay - pDays < 16) {
+            postDaysLeft.text = "Days Left: " + (pFinalDay - pDays).ToString();
+        } else {
+            postDaysLeft.text = "Days Left: 0";
+        }
         postDateText.text = "Date: " + pMonth + "/" + pDays.ToString() + "/1812";
         if (days > finalDay) {
             DeadlineMissed();
